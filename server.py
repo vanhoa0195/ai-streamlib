@@ -53,7 +53,7 @@ client = AzureOpenAI(
     api_key=_azure_api_key,
 )
 
-DEPLOYMENT = os.getenv("OPENAI_DEPLOYMENT", "GPT-4.1-mini")
+DEPLOYMENT = os.getenv("OPENAI_DEPLOYMENT", "GPT-4.0-mini")
 MAX_TOKENS = int(os.getenv("MAX_TOKENS", "1500"))
 
 # In-memory session store
