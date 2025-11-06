@@ -8,7 +8,7 @@ import importlib
 import numpy as np
 from base64 import b64encode
 
-BACKEND_URL = os.getenv("BACKEND_URL", "http://3.25.169.181:8000")
+BACKEND_URL = "http://3.25.169.181:8000"
 STORE_PATH = Path(__file__).parent / "chats_store.json"
 
 st.set_page_config(page_title="Vietnam Airlines Service Chatbot", layout="wide")
