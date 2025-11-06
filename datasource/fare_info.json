@@ -1,0 +1,186 @@
+[
+    {
+        "id": "fare_first_suite",
+        "name": "First Suite",
+        "booking_class": "R",
+        "fare_bases": [
+            {
+                "code": "R",
+                "name": "First Suite Full Fare",
+                "description": "Ultra-luxury private suite experience with personalized service",
+                "benefits": ["Private suite", "Personal butler", "200% miles earned", "Premium lounge access", "Chauffeur service", "Exclusive dining"]
+            },
+            {
+                "code": "P",
+                "name": "First Suite Flex",
+                "description": "Flexible first suite offering with premium amenities",
+                "benefits": ["Private suite", "175% miles earned", "Premium lounge access", "Chauffeur service", "Premium dining"]
+            }
+        ],
+        "source": "official_website"
+    },
+    {
+        "id": "fare_first",
+        "name": "First Class",
+        "booking_class": "F",
+        "fare_bases": [
+            {
+                "code": "F",
+                "name": "First Class Full Fare",
+                "description": "Ultimate luxury with maximum flexibility and exclusive benefits",
+                "benefits": ["Maximum flexibility", "150% miles earned", "Premium lounge access", "Priority check-in", "Chauffeur service"]
+            },
+            {
+                "code": "A",
+                "name": "First Class Discounted",
+                "description": "Discounted first class experience with premium benefits",
+                "benefits": ["125% miles earned", "Premium lounge access", "Priority check-in"]
+            }
+        ],
+        "source": "official_website"
+    },
+    {
+        "id": "fare_business",
+        "name": "Business Class",
+        "booking_class": "C",
+        "fare_bases": [
+            {
+                "code": "J",
+                "name": "Business Full Fare",
+                "description": "Full-fare business class with maximum flexibility",
+                "benefits": ["Full flexibility", "125% miles earned", "Business lounge access", "Priority check-in", "Extra baggage allowance"]
+            },
+            {
+                "code": "C",
+                "name": "Business Standard",
+                "description": "Standard business class with premium benefits",
+                "benefits": ["100% miles earned", "Business lounge access", "Priority check-in", "Extra baggage allowance"]
+            },
+            {
+                "code": "D",
+                "name": "Business Saver",
+                "description": "Discounted business class with core benefits",
+                "benefits": ["75% miles earned", "Business lounge access", "Priority check-in"]
+            },
+            {
+                "code": "I",
+                "name": "Business Super Saver",
+                "description": "Highly discounted business class with limited flexibility",
+                "benefits": ["50% miles earned", "Business lounge access"]
+            }
+        ],
+        "source": "official_website"
+    },
+    {
+        "id": "fare_premium_economy",
+        "name": "Premium Economy",
+        "booking_class": "E",
+        "fare_bases": [
+            {
+                "code": "W",
+                "name": "Premium Economy Full Fare",
+                "description": "Full-fare premium economy with extra comfort",
+                "benefits": ["Extra legroom", "110% miles earned", "Priority check-in", "Additional baggage allowance"]
+            },
+            {
+                "code": "E",
+                "name": "Premium Economy Standard",
+                "description": "Standard premium economy experience",
+                "benefits": ["Extra legroom", "100% miles earned", "Additional baggage allowance"]
+            }
+        ],
+        "source": "official_website"
+    },
+    {
+        "id": "fare_economy_flex",
+        "name": "Economy Flex",
+        "booking_class": "Y",
+        "fare_bases": [
+            {
+                "code": "Y",
+                "name": "Economy Full Flex",
+                "description": "Full-fare economy with maximum flexibility",
+                "benefits": ["Full flexibility", "100% miles earned", "Standard baggage allowance"]
+            },
+            {
+                "code": "B",
+                "name": "Economy Standard Flex",
+                "description": "Standard economy with flexibility options",
+                "benefits": ["Limited flexibility", "75% miles earned", "Standard baggage allowance"]
+            }
+        ],
+        "source": "official_website"
+    },
+    {
+        "id": "fare_economy_saver",
+        "name": "Economy Saver",
+        "booking_class": "M",
+        "fare_bases": [
+            {
+                "code": "M",
+                "name": "Economy Saver",
+                "description": "Discounted economy fare with limited flexibility",
+                "benefits": ["50% miles earned", "Standard baggage allowance"]
+            },
+            {
+                "code": "K",
+                "name": "Economy Super Saver",
+                "description": "Highly discounted economy fare with minimal flexibility",
+                "benefits": ["25% miles earned", "Standard baggage allowance"]
+            },
+            {
+                "code": "L",
+                "name": "Economy Promo",
+                "description": "Special promotional fares with very limited flexibility",
+                "benefits": ["10% miles earned", "Standard baggage allowance"]
+            }
+        ],
+        "source": "official_website"
+    },
+    {
+        "id": "fare_economy_basic",
+        "name": "Economy Basic",
+        "booking_class": "Q",
+        "fare_bases": [
+            {
+                "code": "Q",
+                "name": "Economy Basic",
+                "description": "Basic economy fare with essential services",
+                "benefits": ["5% miles earned", "Paid seat selection", "Paid baggage"]
+            },
+            {
+                "code": "V",
+                "name": "Economy Super Basic",
+                "description": "Lowest fare with minimal services",
+                "benefits": ["No miles earned", "No seat selection", "No baggage allowance"]
+            }
+        ],
+        "source": "official_website"
+    },
+    {
+        "id": "fare_special_service",
+        "name": "Special Service Class",
+        "booking_class": "S",
+        "fare_bases": [
+            {
+                "code": "S",
+                "name": "Medical Transport",
+                "description": "Special fare for medical transport with additional assistance",
+                "benefits": ["Medical assistance", "Priority boarding", "Extra space", "Flexible booking"]
+            },
+            {
+                "code": "H",
+                "name": "Group Travel",
+                "description": "Special fare for group bookings",
+                "benefits": ["Group check-in", "Block seating", "Group baggage handling"]
+            },
+            {
+                "code": "U",
+                "name": "Student/Youth",
+                "description": "Special fare for students and young travelers",
+                "benefits": ["Extra baggage allowance", "Flexible dates", "Student ID required"]
+            }
+        ],
+        "source": "official_website"
+    }
+]
