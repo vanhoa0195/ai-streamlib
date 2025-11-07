@@ -1,0 +1,145 @@
+{
+  "airline_info": {
+    "name": "Vietnam Airlines",
+    "iata_code": "VN",
+    "description": "Vietnam Airlines is the flag carrier of Vietnam, operating domestic and international routes and offering a range of cabin classes and ancillary services such as baggage, meals, seat selection, and travel insurance.",
+    "headquarters": "Hanoi, Vietnam",
+    "website": "https://www.vietnamairlines.com/",
+    "contact": {
+      "hotline_vn": "+84 24 38320320",
+      "email": "contact@vietnamairlines.com"
+    },
+    "source": "official_website",
+    "created_at": "2025-10-25"
+  },
+
+  "routes": [
+    {
+      "id": "route_domestic_1",
+      "title": "Hanoi ↔ Ho Chi Minh City",
+      "type": "domestic",
+      "description": "High-frequency domestic route connecting the political and economic centers of Vietnam.",
+      "frequency": "multiple flights per day (seasonal)",
+      "departure_airport": "Noi Bai (HAN)",
+      "arrival_airport": "Tan Son Nhat (SGN)",
+      "notes": "Frequency varies by season",
+      "source": "official_website"
+    },
+    {
+      "id": "route_international_1",
+      "title": "Hanoi ↔ Tokyo (NRT/HND)",
+      "type": "international",
+      "description": "Scheduled international services to major Asian destinations; frequencies vary by route and season.",
+      "frequency": "daily or several times per week depending on the route",
+      "departure_airport": "Noi Bai (HAN)",
+      "arrival_airport": "Narita (NRT) or Haneda (HND)",
+      "source": "official_website"
+    }
+    
+  ],
+
+  "fares": [
+    {
+      "id": "fare_business",
+      "name": "Business",
+      "description": "Business Class — larger seats, priority check-in, premium meals, increased baggage allowance, and lounge access.",
+      "benefits": ["Priority check-in", "Increased baggage allowance", "Lounge access"],
+      "source": "official_website"
+    },
+    {
+      "id": "fare_economy_flex",
+      "name": "Economy (Flex)",
+      "description": "Flexible economy fare allowing changes or refunds subject to fare rules.",
+      "benefits": ["Ticket changes subject to fees/conditions", "Standard checked baggage allowance"],
+      "source": "official_website"
+    },
+    {
+      "id": "fare_economy_saver",
+      "name": "Economy (Saver)",
+      "description": "Lowest-cost economy fare with limited change/refund options.",
+      "benefits": ["Low price", "Limited change/refund options"],
+      "source": "official_website"
+    }
+  ],
+
+  "current_promotions": [
+    {
+      "id": "promo_summer_2025",
+      "title": "Summer 2025 Promotion",
+      "description": "Up to 30% off selected domestic and Asia routes during the promotion period.",
+      "terms": "Valid for tickets purchased during the promotion period and completed payment; subject to fare rules.",
+      "validity_period": "2025-06-01 to 2025-08-31",
+      "source": "official_website"
+    },
+    {
+      "id": "mile_bonus_offer",
+      "title": "Mileage Bonus for Members",
+      "description": "Bonus miles awarded to members who register or complete flights during the campaign window.",
+      "terms": "Membership registration and campaign-specific conditions apply.",
+      "source": "official_website"
+    }
+  ],
+
+  "ancillary_products": [
+    {
+      "id": "extra_baggage",
+      "name": "Extra Baggage",
+      "description": "Purchase additional checked baggage by piece or by kilogram depending on route rules.",
+      "price_note": "Price varies by route and weight",
+      "source": "official_website"
+    },
+    {
+      "id": "seat_selection",
+      "name": "Seat Selection",
+      "description": "Choose seats in advance (window, aisle, extra legroom). Fees depend on cabin class and seat location.",
+      "price_note": "Fees vary by cabin and seat type",
+      "source": "official_website"
+    },
+    {
+      "id": "meal_service",
+      "name": "Special Meal Requests",
+      "description": "Order special meals (vegetarian, religious, child meals) in advance.",
+      "note": "Must be requested at least 24–48 hours before departure depending on route",
+      "source": "official_website"
+    },
+    {
+      "id": "travel_insurance",
+      "name": "Travel Insurance",
+      "description": "Optional travel insurance packages offered via partners.",
+      "source": "official_website"
+    }
+  ],
+
+  "procedures": [
+    {
+      "id": "checkin_online",
+      "name": "Online Check-in",
+      "description": "Check-in via the airline's website or mobile app prior to departure (typically available 48–24 hours before flight).",
+      "steps": ["Log in with booking reference or e-ticket number", "Select seats and obtain mobile or printed boarding pass"],
+      "source": "official_website"
+    },
+    {
+      "id": "carryon_and_checked_baggage",
+      "name": "Carry-on & Checked Baggage Rules",
+      "description": "Size and weight limits for carry-on and checked baggage, with excess baggage fees when limits are exceeded.",
+      "details": {
+        "carry_on": "Limits vary by fare class — e.g., 7kg for some fares",
+        "checked": "Allowance varies by fare class; fees apply for excess weight/extra pieces"
+      },
+      "source": "official_website"
+    },
+    {
+      "id": "visa_and_passport",
+      "name": "Visa & Passport Requirements",
+      "description": "Passengers must ensure passports are valid and obtain visas if required by the destination country.",
+      "note": "Check the destination country's official government resources for entry requirements",
+      "source": "government_and_official"
+    },
+    {
+      "id": "health_requirements",
+      "name": "Health & Medical Requirements",
+      "description": "Information on testing or vaccination requirements if required by the destination at the time of travel.",
+      "source": "official_website"
+    }
+  ]
+}
