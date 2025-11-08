@@ -1,0 +1,185 @@
+[
+  {
+    "id": "vna_checkin_001",
+    "category": "checkin",
+    "title": "Tổng quan về quy trình check-in Vietnam Airlines",
+    "content": "Vietnam Airlines cung cấp nhiều hình thức check-in bao gồm check-in trực tuyến (online check-in) và check-in tại sân bay. Hành khách nên đến sân bay sớm, chuẩn bị đầy đủ giấy tờ tùy thân và kiểm tra kỹ thông tin chuyến bay trước khi làm thủ tục.",
+    "metadata": {
+      "source": "https://www.vietnamairlines.com",
+      "type": "overview",
+      "language": "vi"
+    }
+  },
+  {
+    "id": "vna_checkin_002",
+    "category": "checkin_online",
+    "title": "Check-in trực tuyến (Online Check-in)",
+    "content": "Hành khách có thể check-in trực tuyến qua website hoặc ứng dụng Vietnam Airlines. Thời gian mở từ 24 giờ đến 1 giờ trước giờ khởi hành. Áp dụng cho hành khách có vé điện tử hợp lệ, không áp dụng cho trẻ em đi một mình, hành khách cần hỗ trợ đặc biệt, hoặc đi cùng trẻ sơ sinh. Quy trình gồm nhập mã đặt chỗ hoặc số vé điện tử, xác nhận thông tin, chọn chỗ ngồi, và nhận thẻ lên máy bay điện tử. Nếu có hành lý ký gửi, hành khách vẫn phải đến quầy gửi hành lý tại sân bay.",
+    "metadata": {
+      "source": "https://www.vietnamairlines.com/vn/vi/travel-information/check-in/online-check-in",
+      "supported_airports": "Tùy sân bay, một số không hỗ trợ",
+      "language": "vi"
+    }
+  },
+  {
+    "id": "vna_checkin_003",
+    "category": "checkin_airport",
+    "title": "Check-in tại sân bay (Airport Check-in)",
+    "content": "Hành khách có thể làm thủ tục trực tiếp tại quầy Vietnam Airlines trong khu vực khởi hành. Với chuyến bay nội địa, quầy mở 2 tiếng và đóng 40 phút trước giờ khởi hành. Với chuyến bay quốc tế, quầy mở 3 tiếng và đóng 50 phút trước giờ khởi hành. Hành khách cần xuất trình giấy tờ tùy thân hợp lệ, gửi hành lý ký gửi (nếu có) và nhận thẻ lên máy bay để qua cổng an ninh.",
+    "metadata": {
+      "type": "process",
+      "language": "vi",
+      "source": "https://www.vietnamairlines.com"
+    }
+  },
+  {
+    "id": "vna_checkin_004",
+    "category": "documents",
+    "title": "Giấy tờ hợp lệ khi làm thủ tục bay Vietnam Airlines",
+    "content": "Đối với chuyến bay nội địa: người lớn cần CCCD, CMND hoặc hộ chiếu; trẻ em cần giấy khai sinh; trẻ sơ sinh có thể dùng giấy chứng sinh. Đối với chuyến bay quốc tế: hành khách cần hộ chiếu còn hạn ít nhất 6 tháng và visa nếu quốc gia đến yêu cầu. Hành khách nên kiểm tra yêu cầu nhập cảnh của nước đến trước khi đặt vé.",
+    "metadata": {
+      "type": "requirement",
+      "language": "vi",
+      "source": "https://www.vietnamairlines.com"
+    }
+  },
+  {
+    "id": "vna_checkin_005",
+    "category": "time_guidelines",
+    "title": "Thời gian có mặt tại sân bay và đóng cửa lên máy bay",
+    "content": "Chuyến bay nội địa: hành khách nên có mặt tại sân bay ít nhất 90 phút trước giờ khởi hành, cửa lên máy bay đóng 15 phút trước khi bay. Chuyến bay quốc tế: nên có mặt 180 phút trước giờ khởi hành, cửa lên máy bay đóng 20 phút trước khi bay. Nếu đến sau thời gian đóng quầy hoặc đóng cửa, hành khách có thể bị từ chối lên máy bay.",
+    "metadata": {
+      "type": "timeline",
+      "language": "vi"
+    }
+  },
+  {
+    "id": "vna_checkin_006",
+    "category": "boarding_process",
+    "title": "Quy trình tổng quát từ check-in đến lên máy bay",
+    "content": "Bước 1: Đến sân bay và xác định khu vực làm thủ tục Vietnam Airlines. Bước 2: Làm check-in hoặc gửi hành lý. Bước 3: Qua kiểm tra an ninh. Bước 4: Đến khu vực chờ khởi hành và theo dõi thông báo chuyến bay. Bước 5: Khi đến giờ, hành khách quét mã trên thẻ lên máy bay để lên máy bay.",
+    "metadata": {
+      "type": "procedure",
+      "language": "vi"
+    }
+  },
+  {
+    "id": "vna_checkin_007",
+    "category": "ai_guidelines",
+    "title": "Hướng dẫn cho AI agent khi tư vấn khách hàng",
+    "content": "AI agent nên xác định loại chuyến bay (nội địa hay quốc tế) trước khi hướng dẫn. Cần cung cấp chính xác thời gian mở và đóng quầy, nhắc khách đến sớm ít nhất 15-30 phút so với tối thiểu. Nếu khách không check-in online được, nên hướng dẫn kiểm tra danh sách sân bay hỗ trợ. Nếu khách quên giấy tờ, hướng dẫn liên hệ quầy Vietnam Airlines tại sân bay. Không khẳng định chắc chắn hành khách được bay nếu đến muộn, thay vào đó, nhắc họ quy định về thời gian đóng quầy.",
+    "metadata": {
+      "type": "agent_instruction",
+      "language": "vi"
+    }
+  },
+  {
+    "id": "vna_checkin_008",
+    "category": "contact",
+    "title": "Thông tin liên hệ và nguồn chính thức Vietnam Airlines",
+    "content": "Website chính thức: https://www.vietnamairlines.com. Hướng dẫn check-in trực tuyến: https://www.vietnamairlines.com/vn/vi/travel-information/check-in/online-check-in. Tổng đài hỗ trợ tại Việt Nam: 1900 1100. Khách quốc tế có thể liên hệ qua trang 'Contact Us' trên website chính thức.",
+    "metadata": {
+      "type": "reference",
+      "language": "vi"
+    }
+  },
+  {
+    "id": "vna_boarding_001",
+    "category": "boarding",
+    "title": "Làm thủ tục boarding tại cửa lên máy bay Vietnam Airlines",
+    "content": "Sau khi hoàn tất check-in và kiểm tra an ninh, hành khách đến khu vực chờ theo thông tin in trên thẻ lên máy bay. Mỗi chuyến bay sẽ có cửa khởi hành (boarding gate) cụ thể, có thể thay đổi, vì vậy hành khách cần theo dõi màn hình hiển thị và thông báo của nhân viên. Quá trình boarding thường bắt đầu khoảng 30 đến 40 phút trước giờ khởi hành. Hành khách được mời lên máy bay theo nhóm hoặc hạng ghế (Business, SkyPriority, sau đó là Economy). Cửa lên máy bay thường đóng 15 phút trước giờ khởi hành với chuyến bay nội địa và 20 phút với chuyến bay quốc tế. Khi boarding, hành khách cần xuất trình thẻ lên máy bay (bản giấy hoặc điện tử) và giấy tờ tùy thân để đối chiếu. Nhân viên quét mã QR hoặc mã vạch trên thẻ lên máy bay trước khi cho phép lên tàu bay.",
+    "metadata": {
+      "type": "procedure",
+      "language": "vi",
+      "source": "https://www.vietnamairlines.com/vn/vi/travel-information/check-in"
+    }
+  },
+  {
+    "id": "vna_irregular_001",
+    "category": "irregular_operations",
+    "title": "Xử lý tình huống trễ chuyến, hủy chuyến hoặc đổi chuyến Vietnam Airlines",
+    "content": "Trong trường hợp chuyến bay bị trễ hoặc hủy, Vietnam Airlines sẽ thông báo cho hành khách qua SMS, email hoặc tại sân bay. Nếu chuyến bay bị trễ dưới 15 phút, hãng thường không thay đổi kế hoạch boarding. Nếu trễ trên 30 phút, hành khách sẽ được cập nhật giờ khởi hành mới và có thể được hỗ trợ nước uống hoặc suất ăn nhẹ tùy thời gian chờ. Nếu chuyến bay bị hủy, Vietnam Airlines sẽ sắp xếp hành khách sang chuyến khác cùng ngày hoặc chuyến kế tiếp tùy tình huống. Hành khách có thể yêu cầu hoàn vé hoặc đổi vé theo quy định của loại vé. Trong trường hợp hành khách chủ động muốn đổi chuyến (do thay đổi kế hoạch cá nhân), cần thực hiện đổi vé trước giờ khởi hành, có thể phát sinh phí thay đổi và chênh lệch giá. Nếu hành khách đến trễ sau thời gian đóng quầy hoặc đóng cửa boarding gate, vé có thể bị mất hiệu lực. Trong trường hợp bất khả kháng (ví dụ: kẹt xe, tai nạn, thiên tai), hành khách nên liên hệ tổng đài 1900 1100 hoặc quầy dịch vụ sân bay để được hỗ trợ xem xét từng trường hợp.",
+    "metadata": {
+      "type": "irregular_scenario",
+      "language": "vi",
+      "source": "https://www.vietnamairlines.com/vn/vi/help-desk"
+    }
+  },
+  {
+    "id": "vna_irregular_002",
+    "category": "irregular_operations",
+    "title": "Chính sách hỗ trợ hành khách trong trường hợp delay hoặc hủy chuyến",
+    "content": "Vietnam Airlines có chính sách hỗ trợ riêng khi chuyến bay bị chậm hoặc hủy do nguyên nhân khách quan. Nếu thời gian trễ trên 2 tiếng, hành khách có thể được cung cấp đồ uống, suất ăn hoặc chỗ nghỉ tùy vào thời gian chờ. Nếu chuyến bay bị hủy do lỗi của hãng, hành khách có thể yêu cầu hoàn tiền toàn bộ hoặc được chuyển sang chuyến bay khác miễn phí. Nếu lý do đến từ yếu tố khách quan như thời tiết xấu, sự cố kỹ thuật hoặc kiểm soát không lưu, hãng sẽ hỗ trợ trong phạm vi có thể. Trong mọi trường hợp, hành khách được quyền yêu cầu xác nhận chậm chuyến hoặc hủy chuyến bằng văn bản để phục vụ bảo hiểm hoặc công tác sau này.",
+    "metadata": {
+      "type": "policy",
+      "language": "vi",
+      "source": "https://www.vietnamairlines.com/vn/vi/plan-book/travel-information/delays-cancellations"
+    }
+  },
+  {
+    "id": "vna_irregular_003",
+    "category": "irregular_operations",
+    "title": "Hướng dẫn đổi vé hoặc hoàn vé Vietnam Airlines",
+    "content": "Hành khách có thể đổi vé hoặc hoàn vé tùy theo loại vé đã mua. Vé hạng Thương gia và hạng Linh hoạt có thể đổi miễn phí hoặc tính phí thấp, trong khi vé khuyến mãi hoặc tiết kiệm có thể không được đổi hoặc hoàn. Việc đổi vé nên thực hiện trước giờ khởi hành. Các kênh hỗ trợ bao gồm: website chính thức, ứng dụng di động, tổng đài 1900 1100 hoặc phòng vé của Vietnam Airlines. Khi đổi hoặc hoàn vé, hành khách cần cung cấp mã đặt chỗ (PNR), số vé điện tử, và giấy tờ tùy thân khớp với thông tin trên vé.",
+    "metadata": {
+      "type": "policy",
+      "language": "vi",
+      "source": "https://www.vietnamairlines.com/vn/vi/help-desk/ticket-change-refund"
+    }
+  },
+    {
+    "id": "vna_booking_001",
+    "category": "booking_online",
+    "title": "Cách đặt vé máy bay Vietnam Airlines trực tuyến (Online Booking)",
+    "content": "Hành khách có thể đặt vé trực tuyến qua website hoặc ứng dụng di động của Vietnam Airlines. Quy trình gồm các bước: 1. Truy cập website https://www.vietnamairlines.com hoặc mở ứng dụng. 2. Chọn hành trình: một chiều, khứ hồi hoặc nhiều chặng. 3. Nhập điểm đi, điểm đến, ngày bay, số lượng hành khách và mã khuyến mãi (nếu có). 4. Chọn chuyến bay và hạng vé mong muốn (Phổ thông, Phổ thông đặc biệt hoặc Thương gia). 5. Nhập thông tin hành khách theo giấy tờ tùy thân. 6. Chọn dịch vụ bổ sung như hành lý, chỗ ngồi, suất ăn. 7. Thanh toán bằng thẻ tín dụng, thẻ ghi nợ, ví điện tử hoặc chuyển khoản. 8. Sau khi thanh toán thành công, hành khách sẽ nhận được mã đặt chỗ (PNR) và vé điện tử qua email. Vé điện tử cần được lưu lại để làm thủ tục check-in.",
+    "metadata": {
+      "type": "procedure",
+      "language": "vi",
+      "source": "https://www.vietnamairlines.com/vn/vi/buy-tickets-other-products/how-to-buy-tickets-and-make-payment/how-to-purchase-tickets/purchase-on-website"
+    }
+  },
+  {
+    "id": "vna_booking_002",
+    "category": "booking_online",
+    "title": "Thông tin cần chuẩn bị khi đặt vé online Vietnam Airlines",
+    "content": "Trước khi đặt vé, hành khách nên chuẩn bị: họ và tên chính xác theo giấy tờ tùy thân, ngày sinh, số hộ chiếu (nếu bay quốc tế), email và số điện thoại liên hệ, phương thức thanh toán phù hợp, hành trình và thời gian bay dự kiến. Nếu là thành viên chương trình LotusMiles, nhập số thẻ để tích điểm. Cần kiểm tra kỹ thông tin trước khi thanh toán để tránh sai sót vì việc sửa tên hoặc đổi vé có thể tốn phí.",
+    "metadata": {
+      "type": "requirement",
+      "language": "vi",
+      "source": "https://www.vietnamairlines.com"
+    }
+  },
+  {
+    "id": "vna_booking_003",
+    "category": "booking_offline",
+    "title": "Cách đặt vé máy bay Vietnam Airlines tại quầy (Offline Booking)",
+    "content": "Hành khách có thể đặt vé trực tiếp tại các phòng vé, đại lý chính thức hoặc quầy Vietnam Airlines tại sân bay. Quy trình gồm: 1. Cung cấp hành trình bay mong muốn (điểm đi, điểm đến, ngày bay, số lượng hành khách). 2. Nhân viên kiểm tra chỗ trống và báo giá. 3. Hành khách cung cấp giấy tờ tùy thân để nhập thông tin chính xác. 4. Thanh toán bằng tiền mặt, thẻ hoặc chuyển khoản tại quầy. 5. Nhận vé giấy hoặc vé điện tử (e-ticket) in ra từ hệ thống. Hành khách nên kiểm tra kỹ thông tin trên vé trước khi rời quầy.",
+    "metadata": {
+      "type": "procedure",
+      "language": "vi",
+      "source": "https://www.vietnamairlines.com/vn/vi/buy-tickets-other-products/how-to-buy-tickets-and-make-payment/how-to-purchase-tickets"
+    }
+  },
+  {
+    "id": "vna_booking_004",
+    "category": "booking_offline",
+    "title": "Danh sách địa điểm đặt vé trực tiếp Vietnam Airlines",
+    "content": "Vietnam Airlines có hệ thống phòng vé chính thức tại hầu hết các thành phố lớn: Hà Nội (200 Nguyễn Sơn, Long Biên), TP. Hồ Chí Minh (49 Trần Hưng Đạo, Quận 1), Đà Nẵng (35 Trần Phú), và nhiều đại lý được ủy quyền khác. Tại sân bay, hành khách cũng có thể mua vé trực tiếp tại quầy bán vé của hãng trong khu vực khởi hành. Giờ mở cửa phòng vé thường từ 08:00 đến 17:00 (thay đổi theo địa phương). Hành khách nên gọi tổng đài 1900 1100 để xác nhận địa chỉ và giờ làm việc trước khi đến.",
+    "metadata": {
+      "type": "reference",
+      "language": "vi",
+      "source": "https://www.vietnamairlines.com/vn/vi/help-desk/contact-us"
+    }
+  },
+  {
+    "id": "vna_booking_005",
+    "category": "booking_general",
+    "title": "Lưu ý quan trọng khi đặt vé Vietnam Airlines",
+    "content": "Tên hành khách phải trùng hoàn toàn với giấy tờ tùy thân; sai tên có thể bị từ chối lên máy bay. Nên kiểm tra kỹ điều kiện vé (được đổi/hủy, hành lý miễn cước, chính sách hoàn tiền). Với vé khuyến mãi, thường không hoàn hoặc đổi. Sau khi mua, hành khách có thể kiểm tra tình trạng vé trên website mục 'Quản lý đặt chỗ' bằng mã PNR hoặc số vé điện tử. Nếu mua vé qua đại lý, nên yêu cầu cung cấp mã đặt chỗ Vietnam Airlines để kiểm tra trực tiếp trên hệ thống.",
+    "metadata": {
+      "type": "advisory",
+      "language": "vi",
+      "source": "https://www.vietnamairlines.com/vn/vi/help-desk"
+    }
+  }
+]

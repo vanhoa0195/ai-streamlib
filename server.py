@@ -13,6 +13,14 @@ import asyncio
 import io
 import numpy as np
 
+# Import prompt configuration for security and structured responses
+from prompt_config import (
+    validate_user_input,
+    build_system_prompt,
+    get_langchain_prompt_template,
+    get_fallback_response
+)
+
 # OpenAI/Azure client exceptions
 from openai import AzureOpenAI, APIConnectionError, APIError, APITimeoutError, RateLimitError
 
@@ -98,203 +106,6 @@ try:
 except Exception as e:
     logger.error("Failed to initialize ChromaDB collection: %s", e)
     vna_collection = None
-    
-import random
-from datetime import datetime, timedelta
-
-def generate_fake_vna_flights():
-    """Generate realistic fake Vietnam Airlines flights for every day in the next 30 days."""
-    known_routes = {
-        ("Hanoi (HAN)", "Ho Chi Minh City (SGN)"): {"duration": 2.0, "base_price": 1800000},
-        ("Hanoi (HAN)", "Da Nang (DAD)"): {"duration": 1.5, "base_price": 1500000},
-        ("Hanoi (HAN)", "Bangkok (BKK)"): {"duration": 2.0, "base_price": 3500000},
-        ("Hanoi (HAN)", "Singapore (SIN)"): {"duration": 3.5, "base_price": 5000000},
-        ("Hanoi (HAN)", "Tokyo (NRT)"): {"duration": 5.0, "base_price": 8500000},
-        ("Hanoi (HAN)", "Seoul (ICN)"): {"duration": 4.0, "base_price": 6500000},
-        ("Hanoi (HAN)", "Paris (CDG)"): {"duration": 12.0, "base_price": 15000000},
-        ("Ho Chi Minh City (SGN)", "Singapore (SIN)"): {"duration": 2.0, "base_price": 4000000},
-        ("Ho Chi Minh City (SGN)", "Tokyo (NRT)"): {"duration": 5.5, "base_price": 9000000},
-        ("Ho Chi Minh City (SGN)", "Sydney (SYD)"): {"duration": 8.5, "base_price": 12000000},
-        ("Ho Chi Minh City (SGN)", "Melbourne (MEL)"): {"duration": 8.0, "base_price": 11000000},
-        ("Ho Chi Minh City (SGN)", "Paris (CDG)"): {"duration": 13.0, "base_price": 15500000},
-        ("Da Nang (DAD)", "Seoul (ICN)"): {"duration": 4.0, "base_price": 6000000},
-        ("Da Nang (DAD)", "Singapore (SIN)"): {"duration": 2.5, "base_price": 4500000},
-    }
-
-    aircraft_types = ["Boeing 787-9 Dreamliner", "Airbus A350-900", "Airbus A321neo"]
-    fare_classes = ["Economy", "Premium Economy", "Business"]
-
-    flights = []
-    today = datetime.now()
-
-    # Generate flights for each route over the next 30 days
-    for (origin, dest), data in known_routes.items():
-        for day_offset in range(30):  # next 30 days
-            dep_date = today + timedelta(days=day_offset)
-            for _ in range(random.randint(1, 2)):  # 1–2 flights per day per route
-                flight_no = f"VN{random.randint(100,999)}"
-                dep_time = dep_date.replace(hour=random.randint(5, 22), minute=random.choice([0, 15, 30, 45]))
-                duration_hours = data["duration"]
-                arr_time = dep_time + timedelta(hours=duration_hours)
-                aircraft = random.choice(aircraft_types)
-                status = random.choice(["On Time", "Delayed", "Available", "Fully Booked"])
-                weekly_freq = "Daily"
-
-                base = data["base_price"]
-                prices = {
-                    "Economy": int(base + random.uniform(-0.1, 0.1) * base),
-                    "Premium Economy": int(base * 1.4 + random.uniform(-0.1, 0.1) * base),
-                    "Business": int(base * 2.0 + random.uniform(-0.1, 0.1) * base),
-                }
-
-                flights.append({
-                    "flight_no": flight_no,
-                    "origin": origin,
-                    "destination": dest,
-                    "departure": dep_time.strftime("%Y-%m-%d %H:%M"),
-                    "arrival": arr_time.strftime("%Y-%m-%d %H:%M"),
-                    "aircraft": aircraft,
-                    "duration_hr": duration_hours,
-                    "status": status,
-                    "weekly_frequency": weekly_freq,
-                    "prices": prices,
-                })
-
-    return flights
-
-
-FAKE_FLIGHTS = generate_fake_vna_flights()
-
-
-import re
-import random
-from datetime import datetime, timedelta
-
-def extract_date_from_text(text: str):
-    """Try to extract a date from the query (e.g. 'Nov 15', '2025-11-20', 'tomorrow', 'next week')."""
-    text = text.lower()
-    today = datetime.now()
-    # Relative references
-    if "tomorrow" in text:
-        return today + timedelta(days=1)
-    if "next week" in text:
-        return today + timedelta(days=7)
-
-    # Match formats like "Nov 15", "15 Nov", "2025-11-20"
-    date_patterns = [
-        r"(\d{4})-(\d{1,2})-(\d{1,2})",
-        r"(\d{1,2})[/-](\d{1,2})[/-](\d{2,4})",
-        r"([A-Za-z]+)\s+(\d{1,2})",
-        r"(\d{1,2})\s+([A-Za-z]+)"
-    ]
-    for pat in date_patterns:
-        m = re.search(pat, text)
-        if m:
-            try:
-                s = " ".join(m.groups())
-                return datetime.strptime(s, "%Y %m %d")
-            except Exception:
-                try:
-                    return datetime.strptime(s, "%d %m %Y")
-                except Exception:
-                    # Try month name formats
-                    try:
-                        return datetime.strptime(s, "%b %d")
-                    except Exception:
-                        try:
-                            return datetime.strptime(s, "%d %b")
-                        except Exception:
-                            continue
-    return None
-
-
-def query_fake_flights(query: str, limit: int = 5):
-    """Smarter search for flights based on user query, with route + date filtering."""
-    query_lower = query.lower()
-    target_date = extract_date_from_text(query)
-    matches = []
-
-    # Detect potential origin/destination cities
-    city_keywords = {
-        "hanoi": "Hanoi (HAN)",
-        "ho chi minh": "Ho Chi Minh City (SGN)",
-        "saigon": "Ho Chi Minh City (SGN)",
-        "danang": "Da Nang (DAD)",
-        "da nang": "Da Nang (DAD)",
-        "nha trang": "Nha Trang (CXR)",
-        "phu quoc": "Phu Quoc (PQC)",
-        "tokyo": "Tokyo (NRT)",
-        "seoul": "Seoul (ICN)",
-        "singapore": "Singapore (SIN)",
-        "bangkok": "Bangkok (BKK)",
-        "paris": "Paris (CDG)",
-        "london": "London (LHR)",
-        "sydney": "Sydney (SYD)",
-        "melbourne": "Melbourne (MEL)",
-        "new york": "New York (JFK)",
-        "san francisco": "San Francisco (SFO)",
-    }
-
-    origin = None
-    destination = None
-    for city_kw, city_full in city_keywords.items():
-        if city_kw in query_lower:
-            if origin is None:
-                origin = city_full
-            elif destination is None and city_full != origin:
-                destination = city_full
-
-    # Search flights
-    for f in FAKE_FLIGHTS:
-        # Route filter
-        if origin and origin not in f["origin"]:
-            continue
-        if destination and destination not in f["destination"]:
-            continue
-
-        # Date filter (±1 day window)
-        if target_date:
-            flight_date = datetime.strptime(f["departure"], "%Y-%m-%d %H:%M")
-            if abs((flight_date - target_date).days) > 1:
-                continue
-
-        matches.append(f)
-
-    # Fallback: if no matches, relax criteria
-    if not matches:
-        for f in FAKE_FLIGHTS:
-            if any(
-                kw in query_lower
-                for kw in [
-                    f["origin"].split()[0].lower(),
-                    f["destination"].split()[0].lower(),
-                    f["origin"].split("(")[1][:3].lower(),
-                    f["destination"].split("(")[1][:3].lower(),
-                ]
-            ):
-                matches.append(f)
-
-    # Shuffle to avoid repetition
-    random.shuffle(matches)
-    return matches[:limit]
-
-
-def format_flight_results(flights: list) -> str:
-    """Trả về bản tóm tắt chuyến bay dễ đọc cho trợ lý."""
-    if not flights:
-        return "Xin lỗi, tôi không tìm thấy chuyến bay nào phù hợp với yêu cầu của bạn."
-
-    msg_lines = ["Dưới đây là một số chuyến bay của Vietnam Airlines mà bạn có thể quan tâm:\n"]
-    for f in flights:
-        msg_lines.append(
-            f"✈️ **{f['flight_no']}** — {f['origin']} → {f['destination']} "
-            f"({f['aircraft']}, {f['duration_hr']} giờ)\n"
-            f"🕓 Khởi hành: {f['departure']} | Hạ cánh: {f['arrival']} | Tần suất: {f.get('weekly_frequency','Hàng ngày')}\n"
-            f"💺 Tình trạng: {f['status']}\n"
-            f"💰 Giá vé: Phổ thông {f['prices']['Economy']:,}₫, "
-            f"Phổ thông đặc biệt {f['prices']['Premium Economy']:,}₫, Thương gia {f['prices']['Business']:,}₫\n"
-        )
-    return "\n".join(msg_lines)
 
 
 
@@ -352,15 +163,7 @@ if LANGCHAIN_AVAILABLE:
 
         # Small prompt template used by the RetrievalQA chain
         qa_prompt = ChatPromptTemplate.from_template(
-            """You are an assistant that helps users with Vietnam Airlines information, booking flow, ticket prices, and onboarding.
-Answer concisely in the requested language (English or Vietnamese). If the information is not present in the provided context, say you don't know and suggest contacting the airline.
-
-Context:
-{context}
-
-User question:
-{question}
-"""
+            get_langchain_prompt_template()
         )
 
         qa_chain = RetrievalQA.from_chain_type(
@@ -420,47 +223,61 @@ async def chat(request: Request):
                 return {"reply": m["content"]}
         return {"reply": "No previous reply to repeat."}
 
+        # ===== INPUT VALIDATION & SECURITY CHECK =====
+    validation_result = validate_user_input(message)
+
+    if not validation_result["valid"]:
+        # Handle security violations
+        reason = validation_result.get("reason", "")
+        logger.warning(f"Invalid input from user {user_id}: {reason}")
+
+        if "prompt_injection" in reason:
+            fallback = get_fallback_response("prompt_injection", language)
+            session.append({"role": "user", "content": message})
+            session.append({"role": "assistant", "content": fallback})
+            _save_sessions_to_disk()
+            return {"reply": fallback, "history": session} if fetch_history else {"reply": fallback}
+
+        elif "input_too_long" in reason:
+            fallback = get_fallback_response("input_too_long", language)
+            return {"reply": fallback}
+
+        else:
+            fallback = get_fallback_response("error", language)
+            return {"reply": fallback}
+
+    # Use sanitized input
+    sanitized_message = validation_result["sanitized_input"]
+
+    # Check for warnings (e.g., potentially off-topic)
+    if validation_result.get("warning"):
+        logger.info(f"Input warning for user {user_id}: {validation_result['warning']}")
+
     # Append user message & persist
-    session.append({"role": "user", "content": message})
+    session.append({"role": "user", "content": sanitized_message})
     _save_sessions_to_disk()
 
     # Try to get relevant info from ChromaDB
     relevant_info = ""
     if vna_collection:
         try:
-            relevant_info = query_vna_info(vna_collection, message) or ""
+            relevant_info = query_vna_info(vna_collection, sanitized_message) or ""
         except Exception as e:
             logger.warning("Failed to query ChromaDB: %s", e)
 
     # Build a system prompt consistent with previous behavior
-    system_prompt = (
-        "You are an assistant that helps users with Vietnam Airlines information, booking flow, ticket prices, and onboarding. "
-        "Answer concisely in the requested language (English or Vietnamese). If the information is not on the official site, say you don't know and suggest contacting the airline. "
-        "Base your answer on this relevant information from official Vietnam Airlines sources: " + relevant_info
-    )
+    system_prompt = build_system_prompt(language=language, relevant_info=relevant_info)
 
     # Build model messages (we keep last 10 messages)
     model_messages = [{"role": "system", "content": system_prompt}] + session[-10:]
 
     # Primary: try LangChain RetrievalQA (if available)
-        # --- New: handle flight-related queries locally ---
-    if any(kw in message.lower() for kw in ["flight", "ticket", "schedule", "route", "chuyến bay", "vé", "lịch trình"]):
-        fake_results = query_fake_flights(message)
-        if fake_results:
-            reply = format_flight_results(fake_results)
-            # Save assistant reply and persist, then return directly
-            session.append({"role": "assistant", "content": reply})
-            _save_sessions_to_disk()
-            if fetch_history:
-                return {"reply": reply, "history": session}
-            return {"reply": reply}
-
     reply = ""
     if qa_chain is not None:
         try:
             # RetrievalQA.run expects a question string
             # We pass the user message; chain will call retriever internally.
-            reply_candidate = await asyncio.to_thread(qa_chain.run, message)
+            reply_candidate = await asyncio.to_thread(qa_chain.run, sanitized_message)
             if reply_candidate and isinstance(reply_candidate, str) and reply_candidate.strip():
                 reply = reply_candidate.strip()
         except Exception as e:
