@@ -1,0 +1,53 @@
+{
+  "flightOptions": [
+    {
+      "journeys": [
+        {
+          "airlineName": "Vietnam Airlines",
+          "flightNumber": "VN660",
+          "duration": "120",
+          "aircraft": "Airbus A321neo",
+          "fareOptions": [
+            {
+              "journeyFareClass": "Economy",
+              "fareInfos": [
+                {
+                  "cabin": {
+                    "name": "Economy"
+                  },
+                  "seatRemain": "9+",
+                  "price": "4,000,000 VND"
+                }
+              ]
+            },
+            {
+              "journeyFareClass": "Premium Economy",
+              "fareInfos": [
+                {
+                  "cabin": {
+                    "name": "Premium Economy"
+                  },
+                  "seatRemain": "9+",
+                  "price": "5,600,000 VND"
+                }
+              ]
+            },
+            {
+              "journeyFareClass": "Business",
+              "fareInfos": [
+                {
+                  "cabin": {
+                    "name": "Business"
+                  },
+                  "seatRemain": "9+",
+                  "price": "8,000,000 VND"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "date": "2025-12-10"
+}
