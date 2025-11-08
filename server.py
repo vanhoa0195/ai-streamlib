@@ -280,36 +280,22 @@ def query_fake_flights(query: str, limit: int = 5):
 
 
 def format_flight_results(flights: list) -> str:
-    """Return a readable text summary for the assistant."""
+    """Trả về bản tóm tắt chuyến bay dễ đọc cho trợ lý."""
     if not flights:
-        return "Sorry, I couldn’t find any flights matching your request."
+        return "Xin lỗi, tôi không tìm thấy chuyến bay nào phù hợp với yêu cầu của bạn."
 
-    msg_lines = ["Here are some Vietnam Airlines flights you might be interested in:\n"]
+    msg_lines = ["Dưới đây là một số chuyến bay của Vietnam Airlines mà bạn có thể quan tâm:\n"]
     for f in flights:
         msg_lines.append(
             f"✈️ **{f['flight_no']}** — {f['origin']} → {f['destination']} "
-            f"({f['aircraft']}, {f['duration_hr']}h)\n"
-            f"🕓 Departure: {f['departure']} | Arrival: {f['arrival']} | Frequency: {f.get('weekly_frequency','Daily')}\n"
-            f"💺 Status: {f['status']}\n"
-            f"💰 Prices: Economy {f['prices']['Economy']:,}₫, "
-            f"Premium {f['prices']['Premium Economy']:,}₫, Business {f['prices']['Business']:,}₫\n"
+            f"({f['aircraft']}, {f['duration_hr']} giờ)\n"
+            f"🕓 Khởi hành: {f['departure']} | Hạ cánh: {f['arrival']} | Tần suất: {f.get('weekly_frequency','Hàng ngày')}\n"
+            f"💺 Tình trạng: {f['status']}\n"
+            f"💰 Giá vé: Phổ thông {f['prices']['Economy']:,}₫, "
+            f"Phổ thông đặc biệt {f['prices']['Premium Economy']:,}₫, Thương gia {f['prices']['Business']:,}₫\n"
         )
     return "\n".join(msg_lines)
 
-    """Return a readable text summary for the assistant."""
-    if not flights:
-        return "Sorry, I couldn’t find any flights matching your request."
-    msg_lines = ["Here are some Vietnam Airlines flights you might be interested in:\n"]
-    for f in flights:
-        msg_lines.append(
-            f"✈️ **{f['flight_no']}** — {f['origin']} → {f['destination']} "
-            f"({f['aircraft']}, {f['duration_hr']}h)\n"
-            f"🕓 Departure: {f['departure']} | Arrival: {f['arrival']}\n"
-            f"💺 Status: {f['status']}\n"
-            f"💰 Prices: Economy {f['prices']['Economy']:,}₫, "
-            f"Premium {f['prices']['Premium Economy']:,}₫, Business {f['prices']['Business']:,}₫\n"
-        )
-    return "\n".join(msg_lines)
 
 
 # TTS model load
