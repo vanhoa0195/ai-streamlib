@@ -443,12 +443,55 @@ async def chat(request: Request):
     model_messages = [{"role": "system", "content": system_prompt}] + session[-10:]
 
     # Primary: try LangChain RetrievalQA (if available)
-        # --- New: handle flight-related queries locally ---
+        # --- New: handle flight-related queries using real API with fallback to fake data ---
     if any(kw in message.lower() for kw in ["flight", "ticket", "schedule", "route", "chuyến bay", "vé", "lịch trình"]):
+        # First try to extract route information
+        route_info = {}
+        city_codes = {
+            "hanoi": "HAN", "ha noi": "HAN",
+            "ho chi minh": "SGN", "saigon": "SGN", "sai gon": "SGN",
+            "da nang": "DAD", "danang": "DAD",
+            "nha trang": "CXR",
+            "phu quoc": "PQC"
+        }
+        
+        # Try to find origin and destination
+        for city, code in city_codes.items():
+            if city in message.lower():
+                if "route_info.get('origin')" not in locals():
+                    route_info['origin'] = code
+                elif "route_info.get('destination')" not in locals() and code != route_info.get('origin'):
+                    route_info['destination'] = code
+        
+        # Try to extract date
+        target_date = extract_date_from_text(message)
+        if target_date:
+            route_info['date'] = target_date.strftime("%Y-%m-%d")
+            
+        # If we have both origin and destination, try the real API
+        if route_info.get('origin') and route_info.get('destination') and route_info.get('date'):
+            try:
+                from flight_api import search_flights
+                flight_results = search_flights(
+                    start_point=route_info['origin'],
+                    end_point=route_info['destination'],
+                    depart_date=route_info['date']
+                )
+                if flight_results:
+                    from flight_api import format_flight_info
+                    reply = format_flight_info(flight_results)
+                    session.append({"role": "assistant", "content": reply})
+                    _save_sessions_to_disk()
+                    if fetch_history:
+                        return {"reply": reply, "history": session}
+                    return {"reply": reply}
+            except Exception as e:
+                logger.warning(f"Real flight API failed, falling back to fake data: {e}")
+                
+        # Fallback to fake data if API fails or if we don't have enough info
         fake_results = query_fake_flights(message)
         if fake_results:
             reply = format_flight_results(fake_results)
-            # Save assistant reply and persist, then return directly
             session.append({"role": "assistant", "content": reply})
             _save_sessions_to_disk()
             if fetch_history:
