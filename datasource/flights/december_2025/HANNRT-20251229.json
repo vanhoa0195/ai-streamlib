@@ -1,0 +1,53 @@
+{
+  "flightOptions": [
+    {
+      "journeys": [
+        {
+          "airlineName": "Vietnam Airlines",
+          "flightNumber": "VN340",
+          "duration": "300",
+          "aircraft": "Boeing 787-9 Dreamliner",
+          "fareOptions": [
+            {
+              "journeyFareClass": "Economy",
+              "fareInfos": [
+                {
+                  "cabin": {
+                    "name": "Economy"
+                  },
+                  "seatRemain": "9+",
+                  "price": "8,500,000 VND"
+                }
+              ]
+            },
+            {
+              "journeyFareClass": "Premium Economy",
+              "fareInfos": [
+                {
+                  "cabin": {
+                    "name": "Premium Economy"
+                  },
+                  "seatRemain": "9+",
+                  "price": "11,900,000 VND"
+                }
+              ]
+            },
+            {
+              "journeyFareClass": "Business",
+              "fareInfos": [
+                {
+                  "cabin": {
+                    "name": "Business"
+                  },
+                  "seatRemain": "9+",
+                  "price": "17,000,000 VND"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "date": "2025-12-29"
+}
