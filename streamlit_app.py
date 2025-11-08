@@ -6,7 +6,7 @@ from pathlib import Path
 from base64 import b64encode
 import numpy as np
 
-BACKEND_URL = "http://3.25.169.181"
+BACKEND_URL = "http://13.210.72.75"
 # BACKEND_URL = "http://localhost:3000"
 STORE_PATH = Path(__file__).parent / "chats_store.json"
 
