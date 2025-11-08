@@ -6,60 +6,9 @@ from datetime import datetime, timedelta
 
 def generate_flights_with_dates():
     """Generate flight schedule with specific dates for next 30 days"""
-    return generate_flights()
 
-def generate_flights():
-    """Generate flight schedule with template data"""
-    flights = []
-    today = datetime.now()
-
-    # Generate flights for next 30 days
-    for day_offset in range(30):
-        flight_date = today + timedelta(days=day_offset)
-
-        for template in flight_templates:
-            # Parse departure time
-            dep_hour, dep_min = map(int, template["departure_time"].split(":"))
-
-            # Create departure datetime
-            departure_dt = flight_date.replace(hour=dep_hour, minute=dep_min, second=0, microsecond=0)
-
-            # Calculate arrival datetime
-            arrival_dt = departure_dt + timedelta(minutes=template["duration_minutes"])
-
-            # Calculate duration in hours and minutes
-            duration_hours = template["duration_minutes"] // 60
-            duration_mins = template["duration_minutes"] % 60
-            duration_str = f"{duration_hours}h {duration_mins}m" if duration_mins > 0 else f"{duration_hours}h"
-
-            # Create flight entry
-            flight = {
-                "id": f"flight_{template['flight_number']}_{flight_date.strftime('%Y%m%d')}",
-                "flight_number": template["flight_number"],
-                "origin": template["origin"],
-                "destination": template["destination"],
-                "departure_date": departure_dt.strftime("%Y-%m-%d"),
-                "departure_time": departure_dt.strftime("%H:%M"),
-                "departure_datetime": departure_dt.strftime("%Y-%m-%d %H:%M"),
-                "arrival_date": arrival_dt.strftime("%Y-%m-%d"),
-                "arrival_time": arrival_dt.strftime("%H:%M"),
-                "arrival_datetime": arrival_dt.strftime("%Y-%m-%d %H:%M"),
-                "duration": duration_str,
-                "aircraft": template["aircraft"],
-                "frequency": template["frequency"],
-                "status": "Available",
-                "fare_economy": template["fare_economy"],
-                "fare_premium_economy": template["fare_premium_economy"],
-                "fare_business": template["fare_business"],
-                "source": "flight_schedule"
-            }
-
-            flights.append(flight)
-
-    return flights
-
-# Flight templates with routes and schedules
-flight_templates = [
+    # Flight templates with routes and schedules
+    flight_templates = [
         # Hanoi to Ho Chi Minh City
         {
             "flight_number": "VN210",
