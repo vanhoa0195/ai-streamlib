@@ -32,11 +32,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1746933,
-                        "tax": 739549,
+                        "base": 1733971,
+                        "tax": 662643,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2486482,
+                        "total": 2396614,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -84,7 +84,7 @@
               "fareInfos": [
                 {
                   "fareClass": "N",
-                  "seatRemain": 3,
+                  "seatRemain": 1,
                   "cabin": {
                     "code": "Economy",
                     "description": "N",
@@ -136,11 +136,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3288728,
-                        "tax": 869127,
+                        "base": 2698715,
+                        "tax": 777718,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4157855,
+                        "total": 3476433,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -188,7 +188,7 @@
               "fareInfos": [
                 {
                   "fareClass": "I",
-                  "seatRemain": 6,
+                  "seatRemain": 3,
                   "cabin": {
                     "code": "Business",
                     "description": "I",
@@ -240,11 +240,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3515424,
-                        "tax": 900419,
+                        "base": 3095751,
+                        "tax": 711462,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4415843,
+                        "total": 3807213,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -292,7 +292,7 @@
               "fareInfos": [
                 {
                   "fareClass": "U",
-                  "seatRemain": 4,
+                  "seatRemain": 2,
                   "cabin": {
                     "code": "Premium",
                     "description": "U",
@@ -351,10 +351,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763157600,
+                "scheduleTime": 1764194400,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T05:00:00"
+                "localTime": "2025-11-27T05:00:00"
               },
               "arrival": {
                 "airport": {
@@ -366,23 +366,23 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763165400,
+                "scheduleTime": 1764202200,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T07:10:00"
+                "localTime": "2025-11-27T07:10:00"
               },
               "bookingClassArr": [
                 {
                   "fareClass": "N",
-                  "available": 3
+                  "available": 1
                 },
                 {
                   "fareClass": "I",
-                  "available": 6
+                  "available": 3
                 },
                 {
                   "fareClass": "U",
-                  "available": 4
+                  "available": 2
                 }
               ],
               "bookedInfo": null,
@@ -402,10 +402,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763157600,
+            "scheduleTime": 1764194400,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T05:00:00"
+            "localTime": "2025-11-27T05:00:00"
           },
           "arrival": {
             "airport": {
@@ -417,10 +417,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763165400,
+            "scheduleTime": 1764202200,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T07:10:00"
+            "localTime": "2025-11-27T07:10:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -465,11 +465,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1296610,
-                        "tax": 716415,
+                        "base": 1260647,
+                        "tax": 690259,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2013025,
+                        "total": 1950906,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -517,7 +517,7 @@
               "fareInfos": [
                 {
                   "fareClass": "T",
-                  "seatRemain": 1,
+                  "seatRemain": 2,
                   "cabin": {
                     "code": "Economy",
                     "description": "T",
@@ -569,11 +569,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3575885,
-                        "tax": 841667,
+                        "base": 3121227,
+                        "tax": 842320,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4417552,
+                        "total": 3963547,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -621,7 +621,7 @@
               "fareInfos": [
                 {
                   "fareClass": "I",
-                  "seatRemain": 3,
+                  "seatRemain": 4,
                   "cabin": {
                     "code": "Business",
                     "description": "I",
@@ -673,11 +673,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3336256,
-                        "tax": 825281,
+                        "base": 3241559,
+                        "tax": 854319,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4161537,
+                        "total": 4095878,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -725,7 +725,7 @@
               "fareInfos": [
                 {
                   "fareClass": "U",
-                  "seatRemain": 9,
+                  "seatRemain": 5,
                   "cabin": {
                     "code": "Premium",
                     "description": "U",
@@ -784,10 +784,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763161200,
+                "scheduleTime": 1764198000,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T06:00:00"
+                "localTime": "2025-11-27T06:00:00"
               },
               "arrival": {
                 "airport": {
@@ -799,23 +799,23 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763169000,
+                "scheduleTime": 1764205800,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T08:10:00"
+                "localTime": "2025-11-27T08:10:00"
               },
               "bookingClassArr": [
                 {
                   "fareClass": "T",
-                  "available": 1
+                  "available": 2
                 },
                 {
                   "fareClass": "I",
-                  "available": 3
+                  "available": 4
                 },
                 {
                   "fareClass": "U",
-                  "available": 9
+                  "available": 5
                 }
               ],
               "bookedInfo": null,
@@ -835,10 +835,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763161200,
+            "scheduleTime": 1764198000,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T06:00:00"
+            "localTime": "2025-11-27T06:00:00"
           },
           "arrival": {
             "airport": {
@@ -850,10 +850,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763169000,
+            "scheduleTime": 1764205800,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T08:10:00"
+            "localTime": "2025-11-27T08:10:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -898,11 +898,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1642821,
-                        "tax": 745302,
+                        "base": 1462079,
+                        "tax": 669659,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2388123,
+                        "total": 2131738,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -950,7 +950,7 @@
               "fareInfos": [
                 {
                   "fareClass": "R",
-                  "seatRemain": 3,
+                  "seatRemain": 6,
                   "cabin": {
                     "code": "Economy",
                     "description": "R",
@@ -1002,11 +1002,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3577674,
-                        "tax": 886628,
+                        "base": 3156195,
+                        "tax": 816425,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4464302,
+                        "total": 3972620,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -1054,7 +1054,7 @@
               "fareInfos": [
                 {
                   "fareClass": "U",
-                  "seatRemain": 1,
+                  "seatRemain": 3,
                   "cabin": {
                     "code": "Premium",
                     "description": "U",
@@ -1106,11 +1106,11 @@
                         }
                       },
                       "charge": {
-                        "base": 5362902,
-                        "tax": 972371,
+                        "base": 4186378,
+                        "tax": 861367,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 6335273,
+                        "total": 5047745,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -1158,7 +1158,7 @@
               "fareInfos": [
                 {
                   "fareClass": "I",
-                  "seatRemain": 7,
+                  "seatRemain": 5,
                   "cabin": {
                     "code": "Business",
                     "description": "I",
@@ -1217,10 +1217,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763164800,
+                "scheduleTime": 1764201600,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T07:00:00"
+                "localTime": "2025-11-27T07:00:00"
               },
               "arrival": {
                 "airport": {
@@ -1232,23 +1232,23 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763172600,
+                "scheduleTime": 1764209400,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T09:10:00"
+                "localTime": "2025-11-27T09:10:00"
               },
               "bookingClassArr": [
                 {
                   "fareClass": "R",
-                  "available": 3
+                  "available": 6
                 },
                 {
                   "fareClass": "U",
-                  "available": 1
+                  "available": 3
                 },
                 {
                   "fareClass": "I",
-                  "available": 7
+                  "available": 5
                 }
               ],
               "bookedInfo": null,
@@ -1268,10 +1268,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763164800,
+            "scheduleTime": 1764201600,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T07:00:00"
+            "localTime": "2025-11-27T07:00:00"
           },
           "arrival": {
             "airport": {
@@ -1283,10 +1283,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763172600,
+            "scheduleTime": 1764209400,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T09:10:00"
+            "localTime": "2025-11-27T09:10:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -1331,11 +1331,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1777313,
-                        "tax": 829594,
+                        "base": 1745272,
+                        "tax": 685457,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2606907,
+                        "total": 2430729,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -1383,7 +1383,7 @@
               "fareInfos": [
                 {
                   "fareClass": "N",
-                  "seatRemain": 7,
+                  "seatRemain": 5,
                   "cabin": {
                     "code": "Economy",
                     "description": "N",
@@ -1435,11 +1435,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3420983,
-                        "tax": 825041,
+                        "base": 2797854,
+                        "tax": 832202,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4246024,
+                        "total": 3630056,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -1539,11 +1539,11 @@
                         }
                       },
                       "charge": {
-                        "base": 7980401,
-                        "tax": 1333841,
+                        "base": 7827791,
+                        "tax": 1036441,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 9314242,
+                        "total": 8864232,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -1650,10 +1650,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763168400,
+                "scheduleTime": 1764205200,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T08:00:00"
+                "localTime": "2025-11-27T08:00:00"
               },
               "arrival": {
                 "airport": {
@@ -1665,15 +1665,15 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763176200,
+                "scheduleTime": 1764213000,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T10:10:00"
+                "localTime": "2025-11-27T10:10:00"
               },
               "bookingClassArr": [
                 {
                   "fareClass": "N",
-                  "available": 7
+                  "available": 5
                 },
                 {
                   "fareClass": "U",
@@ -1701,10 +1701,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763168400,
+            "scheduleTime": 1764205200,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T08:00:00"
+            "localTime": "2025-11-27T08:00:00"
           },
           "arrival": {
             "airport": {
@@ -1716,10 +1716,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763176200,
+            "scheduleTime": 1764213000,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T10:10:00"
+            "localTime": "2025-11-27T10:10:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -1764,11 +1764,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1783497,
-                        "tax": 728356,
+                        "base": 1290498,
+                        "tax": 705254,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2511853,
+                        "total": 1995752,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -1816,7 +1816,7 @@
               "fareInfos": [
                 {
                   "fareClass": "R",
-                  "seatRemain": 8,
+                  "seatRemain": 2,
                   "cabin": {
                     "code": "Economy",
                     "description": "R",
@@ -1868,11 +1868,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3669220,
-                        "tax": 957849,
+                        "base": 2830139,
+                        "tax": 730102,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4627069,
+                        "total": 3560241,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -1920,7 +1920,7 @@
               "fareInfos": [
                 {
                   "fareClass": "U",
-                  "seatRemain": 8,
+                  "seatRemain": 6,
                   "cabin": {
                     "code": "Premium",
                     "description": "U",
@@ -1972,11 +1972,11 @@
                         }
                       },
                       "charge": {
-                        "base": 8453468,
-                        "tax": 1309960,
+                        "base": 7670096,
+                        "tax": 1018646,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 9763428,
+                        "total": 8688742,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -2024,7 +2024,7 @@
               "fareInfos": [
                 {
                   "fareClass": "J",
-                  "seatRemain": 4,
+                  "seatRemain": 3,
                   "cabin": {
                     "code": "Business",
                     "description": "J",
@@ -2083,10 +2083,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763172000,
+                "scheduleTime": 1764208800,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T09:00:00"
+                "localTime": "2025-11-27T09:00:00"
               },
               "arrival": {
                 "airport": {
@@ -2098,23 +2098,23 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763179800,
+                "scheduleTime": 1764216600,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T11:10:00"
+                "localTime": "2025-11-27T11:10:00"
               },
               "bookingClassArr": [
                 {
                   "fareClass": "R",
-                  "available": 8
+                  "available": 2
                 },
                 {
                   "fareClass": "U",
-                  "available": 8
+                  "available": 6
                 },
                 {
                   "fareClass": "J",
-                  "available": 4
+                  "available": 3
                 }
               ],
               "bookedInfo": null,
@@ -2134,10 +2134,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763172000,
+            "scheduleTime": 1764208800,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T09:00:00"
+            "localTime": "2025-11-27T09:00:00"
           },
           "arrival": {
             "airport": {
@@ -2149,10 +2149,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763179800,
+            "scheduleTime": 1764216600,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T11:10:00"
+            "localTime": "2025-11-27T11:10:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -2197,11 +2197,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1485948,
-                        "tax": 800820,
+                        "base": 1140243,
+                        "tax": 695153,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2286768,
+                        "total": 1835396,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -2301,11 +2301,11 @@
                         }
                       },
                       "charge": {
-                        "base": 4035144,
-                        "tax": 873303,
+                        "base": 3301925,
+                        "tax": 843420,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4908447,
+                        "total": 4145345,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -2353,7 +2353,7 @@
               "fareInfos": [
                 {
                   "fareClass": "Z",
-                  "seatRemain": 3,
+                  "seatRemain": 6,
                   "cabin": {
                     "code": "Premium",
                     "description": "Z",
@@ -2405,11 +2405,11 @@
                         }
                       },
                       "charge": {
-                        "base": 8126608,
-                        "tax": 1357647,
+                        "base": 7975750,
+                        "tax": 1128413,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 9484255,
+                        "total": 9104163,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -2457,7 +2457,7 @@
               "fareInfos": [
                 {
                   "fareClass": "J",
-                  "seatRemain": 3,
+                  "seatRemain": 7,
                   "cabin": {
                     "code": "Business",
                     "description": "J",
@@ -2516,10 +2516,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763174100,
+                "scheduleTime": 1764210900,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T09:35:00"
+                "localTime": "2025-11-27T09:35:00"
               },
               "arrival": {
                 "airport": {
@@ -2531,10 +2531,10 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763181900,
+                "scheduleTime": 1764218700,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T11:45:00"
+                "localTime": "2025-11-27T11:45:00"
               },
               "bookingClassArr": [
                 {
@@ -2543,11 +2543,11 @@
                 },
                 {
                   "fareClass": "Z",
-                  "available": 3
+                  "available": 6
                 },
                 {
                   "fareClass": "J",
-                  "available": 3
+                  "available": 7
                 }
               ],
               "bookedInfo": null,
@@ -2567,10 +2567,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763174100,
+            "scheduleTime": 1764210900,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T09:35:00"
+            "localTime": "2025-11-27T09:35:00"
           },
           "arrival": {
             "airport": {
@@ -2582,10 +2582,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763181900,
+            "scheduleTime": 1764218700,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T11:45:00"
+            "localTime": "2025-11-27T11:45:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -2630,11 +2630,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1695544,
-                        "tax": 757022,
+                        "base": 1442263,
+                        "tax": 603515,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2452566,
+                        "total": 2045778,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -2682,7 +2682,7 @@
               "fareInfos": [
                 {
                   "fareClass": "R",
-                  "seatRemain": 1,
+                  "seatRemain": 4,
                   "cabin": {
                     "code": "Economy",
                     "description": "R",
@@ -2734,11 +2734,444 @@
                         }
                       },
                       "charge": {
-                        "base": 3742942,
-                        "tax": 943934,
+                        "base": 3082597,
+                        "tax": 793706,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4686876,
+                        "total": 3876303,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": null,
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "",
+                      "extra": null
+                    },
+                    {
+                      "key": "",
+                      "chargeType": {
+                        "code": "BE_SERVICE",
+                        "type": "BE_SERVICE",
+                        "category": "",
+                        "description": {
+                          "en": "System Service Fee",
+                          "vi": "Phí dịch vụ hệ thống"
+                        }
+                      },
+                      "charge": {
+                        "base": 0,
+                        "tax": 0,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 5000,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": "VND",
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "Phí dịch vụ hệ thống",
+                      "extra": null
+                    }
+                  ],
+                  "totalFare": null,
+                  "change": false
+                }
+              ],
+              "fareInfos": [
+                {
+                  "fareClass": "U",
+                  "seatRemain": 7,
+                  "cabin": {
+                    "code": "Premium",
+                    "description": "U",
+                    "name": "Premium"
+                  },
+                  "fareType": {
+                    "code": "Premium",
+                    "description": "Premium"
+                  },
+                  "checkedBags": "1 kiện",
+                  "carryOnBags": ""
+                }
+              ],
+              "currency": {
+                "baseCurrency": true,
+                "code": null,
+                "description": "",
+                "exchangeRate": 1
+              },
+              "rules": null,
+              "privateFare": null,
+              "lccFare": null,
+              "ndcFare": null,
+              "refundableFare": null,
+              "ndcTimeLimit": 0,
+              "vfrFare": null,
+              "vfrFareWithRelations": null,
+              "vfrFareLaborVisa": null
+            },
+            {
+              "key": "FARE_OPTION_9b3a740983c9fde00b333b4e9d855a4b",
+              "comboRefs": null,
+              "journeyFareClass": "J",
+              "fareAmountBreakdowns": [
+                {
+                  "type": "ADULT",
+                  "changeType": null,
+                  "dataChange": null,
+                  "charges": [
+                    {
+                      "key": "ADTFARE_OPTION_9b3a740983c9fde00b333b4e9d855a4b",
+                      "chargeType": {
+                        "code": "FARE",
+                        "type": "Fare",
+                        "category": "",
+                        "description": {
+                          "en": "Fare Charge",
+                          "vi": "Phí vé"
+                        }
+                      },
+                      "charge": {
+                        "base": 7791994,
+                        "tax": 1139118,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 8931112,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": null,
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "",
+                      "extra": null
+                    },
+                    {
+                      "key": "",
+                      "chargeType": {
+                        "code": "BE_SERVICE",
+                        "type": "BE_SERVICE",
+                        "category": "",
+                        "description": {
+                          "en": "System Service Fee",
+                          "vi": "Phí dịch vụ hệ thống"
+                        }
+                      },
+                      "charge": {
+                        "base": 0,
+                        "tax": 0,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 5000,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": "VND",
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "Phí dịch vụ hệ thống",
+                      "extra": null
+                    }
+                  ],
+                  "totalFare": null,
+                  "change": false
+                }
+              ],
+              "fareInfos": [
+                {
+                  "fareClass": "J",
+                  "seatRemain": 9,
+                  "cabin": {
+                    "code": "Business",
+                    "description": "J",
+                    "name": "Business"
+                  },
+                  "fareType": {
+                    "code": "Business",
+                    "description": "Business"
+                  },
+                  "checkedBags": "1 kiện",
+                  "carryOnBags": ""
+                }
+              ],
+              "currency": {
+                "baseCurrency": true,
+                "code": null,
+                "description": "",
+                "exchangeRate": 1
+              },
+              "rules": null,
+              "privateFare": null,
+              "lccFare": null,
+              "ndcFare": null,
+              "refundableFare": null,
+              "ndcTimeLimit": 0,
+              "vfrFare": null,
+              "vfrFareWithRelations": null,
+              "vfrFareLaborVisa": null
+            }
+          ],
+          "key": "JOURNEY_0_d543dc2969b09592ea7b1e5b6f534263",
+          "leg": 0,
+          "numOfStops": 0,
+          "operating": "VN",
+          "operatingName": "Vietnam Airlines",
+          "segments": [
+            {
+              "key": "SEGMENT_b3366c9f78cd0491772fe2df06ad07e4",
+              "cancel": null,
+              "index": null,
+              "airline": "VN",
+              "airlineName": "Vietnam Airlines",
+              "duration": 130,
+              "delay": 0,
+              "flightNumber": "247",
+              "operating": "VN",
+              "operatingName": "Vietnam Airlines",
+              "stopPoint": null,
+              "departure": {
+                "airport": {
+                  "code": "HAN",
+                  "name": "Sân bay quốc tế Nội Bài",
+                  "utcOffset": {
+                    "iso": "+07:00",
+                    "zone": 7
+                  },
+                  "terminal": "1"
+                },
+                "scheduleTime": 1764212400,
+                "dataChange": "",
+                "typeChange": "",
+                "localTime": "2025-11-27T10:00:00"
+              },
+              "arrival": {
+                "airport": {
+                  "code": "SGN",
+                  "name": "Sân bay quốc tế Tân Sơn Nhất",
+                  "utcOffset": {
+                    "iso": "+07:00",
+                    "zone": 7
+                  },
+                  "terminal": "3"
+                },
+                "scheduleTime": 1764220200,
+                "dataChange": "",
+                "typeChange": "",
+                "localTime": "2025-11-27T12:10:00"
+              },
+              "bookingClassArr": [
+                {
+                  "fareClass": "R",
+                  "available": 4
+                },
+                {
+                  "fareClass": "U",
+                  "available": 7
+                },
+                {
+                  "fareClass": "J",
+                  "available": 9
+                }
+              ],
+              "bookedInfo": null,
+              "fareType": null,
+              "modelAirplane": "359",
+              "modelAirplaneName": "Airbus A350-900",
+              "codeAirline": ""
+            }
+          ],
+          "departure": {
+            "airport": {
+              "code": "HAN",
+              "name": "Sân bay quốc tế Nội Bài",
+              "utcOffset": {
+                "iso": "+07:00",
+                "zone": 7
+              },
+              "terminal": ""
+            },
+            "scheduleTime": 1764212400,
+            "dataChange": "",
+            "typeChange": "",
+            "localTime": "2025-11-27T10:00:00"
+          },
+          "arrival": {
+            "airport": {
+              "code": "SGN",
+              "name": "Sân bay quốc tế Tân Sơn Nhất",
+              "utcOffset": {
+                "iso": "+07:00",
+                "zone": 7
+              },
+              "terminal": ""
+            },
+            "scheduleTime": 1764220200,
+            "dataChange": "",
+            "typeChange": "",
+            "localTime": "2025-11-27T12:10:00"
+          },
+          "dataChange": "",
+          "typeChange": "",
+          "expireTime": 1762507891,
+          "stopOvernight": 0,
+          "fareClass": "",
+          "status": null
+        }
+      ],
+      "provider": "VN",
+      "type": "SINGLE"
+    },
+    {
+      "comboInfo": null,
+      "flightType": "DOMESTIC",
+      "journeys": [
+        {
+          "airline": "VN",
+          "cancel": false,
+          "airlineName": "Vietnam Airlines",
+          "duration": 130,
+          "fareOptions": [
+            {
+              "key": "FARE_OPTION_c327538b34a4d034a4317a40fba69c06",
+              "comboRefs": null,
+              "journeyFareClass": "R",
+              "fareAmountBreakdowns": [
+                {
+                  "type": "ADULT",
+                  "changeType": null,
+                  "dataChange": null,
+                  "charges": [
+                    {
+                      "key": "ADTFARE_OPTION_c327538b34a4d034a4317a40fba69c06",
+                      "chargeType": {
+                        "code": "FARE",
+                        "type": "Fare",
+                        "category": "",
+                        "description": {
+                          "en": "Fare Charge",
+                          "vi": "Phí vé"
+                        }
+                      },
+                      "charge": {
+                        "base": 1476462,
+                        "tax": 650214,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 2126676,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": null,
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "",
+                      "extra": null
+                    },
+                    {
+                      "key": "",
+                      "chargeType": {
+                        "code": "BE_SERVICE",
+                        "type": "BE_SERVICE",
+                        "category": "",
+                        "description": {
+                          "en": "System Service Fee",
+                          "vi": "Phí dịch vụ hệ thống"
+                        }
+                      },
+                      "charge": {
+                        "base": 0,
+                        "tax": 0,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 5000,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": "VND",
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "Phí dịch vụ hệ thống",
+                      "extra": null
+                    }
+                  ],
+                  "totalFare": null,
+                  "change": false
+                }
+              ],
+              "fareInfos": [
+                {
+                  "fareClass": "R",
+                  "seatRemain": 5,
+                  "cabin": {
+                    "code": "Economy",
+                    "description": "R",
+                    "name": "Economy"
+                  },
+                  "fareType": {
+                    "code": "Economy",
+                    "description": "Economy"
+                  },
+                  "checkedBags": "1 kiện",
+                  "carryOnBags": ""
+                }
+              ],
+              "currency": {
+                "baseCurrency": true,
+                "code": null,
+                "description": "",
+                "exchangeRate": 1
+              },
+              "rules": null,
+              "privateFare": null,
+              "lccFare": null,
+              "ndcFare": null,
+              "refundableFare": null,
+              "ndcTimeLimit": 0,
+              "vfrFare": null,
+              "vfrFareWithRelations": null,
+              "vfrFareLaborVisa": null
+            },
+            {
+              "key": "FARE_OPTION_c28d738ddeac914c67b03c29e091df80",
+              "comboRefs": null,
+              "journeyFareClass": "U",
+              "fareAmountBreakdowns": [
+                {
+                  "type": "ADULT",
+                  "changeType": null,
+                  "dataChange": null,
+                  "charges": [
+                    {
+                      "key": "ADTFARE_OPTION_c28d738ddeac914c67b03c29e091df80",
+                      "chargeType": {
+                        "code": "FARE",
+                        "type": "Fare",
+                        "category": "",
+                        "description": {
+                          "en": "Fare Charge",
+                          "vi": "Phí vé"
+                        }
+                      },
+                      "charge": {
+                        "base": 2864696,
+                        "tax": 835751,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 3700447,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -2817,439 +3250,6 @@
               "vfrFareLaborVisa": null
             },
             {
-              "key": "FARE_OPTION_9b3a740983c9fde00b333b4e9d855a4b",
-              "comboRefs": null,
-              "journeyFareClass": "J",
-              "fareAmountBreakdowns": [
-                {
-                  "type": "ADULT",
-                  "changeType": null,
-                  "dataChange": null,
-                  "charges": [
-                    {
-                      "key": "ADTFARE_OPTION_9b3a740983c9fde00b333b4e9d855a4b",
-                      "chargeType": {
-                        "code": "FARE",
-                        "type": "Fare",
-                        "category": "",
-                        "description": {
-                          "en": "Fare Charge",
-                          "vi": "Phí vé"
-                        }
-                      },
-                      "charge": {
-                        "base": 9071726,
-                        "tax": 1274214,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 10345940,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": null,
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "",
-                      "extra": null
-                    },
-                    {
-                      "key": "",
-                      "chargeType": {
-                        "code": "BE_SERVICE",
-                        "type": "BE_SERVICE",
-                        "category": "",
-                        "description": {
-                          "en": "System Service Fee",
-                          "vi": "Phí dịch vụ hệ thống"
-                        }
-                      },
-                      "charge": {
-                        "base": 0,
-                        "tax": 0,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 5000,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": "VND",
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "Phí dịch vụ hệ thống",
-                      "extra": null
-                    }
-                  ],
-                  "totalFare": null,
-                  "change": false
-                }
-              ],
-              "fareInfos": [
-                {
-                  "fareClass": "J",
-                  "seatRemain": 1,
-                  "cabin": {
-                    "code": "Business",
-                    "description": "J",
-                    "name": "Business"
-                  },
-                  "fareType": {
-                    "code": "Business",
-                    "description": "Business"
-                  },
-                  "checkedBags": "1 kiện",
-                  "carryOnBags": ""
-                }
-              ],
-              "currency": {
-                "baseCurrency": true,
-                "code": null,
-                "description": "",
-                "exchangeRate": 1
-              },
-              "rules": null,
-              "privateFare": null,
-              "lccFare": null,
-              "ndcFare": null,
-              "refundableFare": null,
-              "ndcTimeLimit": 0,
-              "vfrFare": null,
-              "vfrFareWithRelations": null,
-              "vfrFareLaborVisa": null
-            }
-          ],
-          "key": "JOURNEY_0_d543dc2969b09592ea7b1e5b6f534263",
-          "leg": 0,
-          "numOfStops": 0,
-          "operating": "VN",
-          "operatingName": "Vietnam Airlines",
-          "segments": [
-            {
-              "key": "SEGMENT_b3366c9f78cd0491772fe2df06ad07e4",
-              "cancel": null,
-              "index": null,
-              "airline": "VN",
-              "airlineName": "Vietnam Airlines",
-              "duration": 130,
-              "delay": 0,
-              "flightNumber": "247",
-              "operating": "VN",
-              "operatingName": "Vietnam Airlines",
-              "stopPoint": null,
-              "departure": {
-                "airport": {
-                  "code": "HAN",
-                  "name": "Sân bay quốc tế Nội Bài",
-                  "utcOffset": {
-                    "iso": "+07:00",
-                    "zone": 7
-                  },
-                  "terminal": "1"
-                },
-                "scheduleTime": 1763175600,
-                "dataChange": "",
-                "typeChange": "",
-                "localTime": "2025-11-15T10:00:00"
-              },
-              "arrival": {
-                "airport": {
-                  "code": "SGN",
-                  "name": "Sân bay quốc tế Tân Sơn Nhất",
-                  "utcOffset": {
-                    "iso": "+07:00",
-                    "zone": 7
-                  },
-                  "terminal": "3"
-                },
-                "scheduleTime": 1763183400,
-                "dataChange": "",
-                "typeChange": "",
-                "localTime": "2025-11-15T12:10:00"
-              },
-              "bookingClassArr": [
-                {
-                  "fareClass": "R",
-                  "available": 1
-                },
-                {
-                  "fareClass": "U",
-                  "available": 5
-                },
-                {
-                  "fareClass": "J",
-                  "available": 1
-                }
-              ],
-              "bookedInfo": null,
-              "fareType": null,
-              "modelAirplane": "359",
-              "modelAirplaneName": "Airbus A350-900",
-              "codeAirline": ""
-            }
-          ],
-          "departure": {
-            "airport": {
-              "code": "HAN",
-              "name": "Sân bay quốc tế Nội Bài",
-              "utcOffset": {
-                "iso": "+07:00",
-                "zone": 7
-              },
-              "terminal": ""
-            },
-            "scheduleTime": 1763175600,
-            "dataChange": "",
-            "typeChange": "",
-            "localTime": "2025-11-15T10:00:00"
-          },
-          "arrival": {
-            "airport": {
-              "code": "SGN",
-              "name": "Sân bay quốc tế Tân Sơn Nhất",
-              "utcOffset": {
-                "iso": "+07:00",
-                "zone": 7
-              },
-              "terminal": ""
-            },
-            "scheduleTime": 1763183400,
-            "dataChange": "",
-            "typeChange": "",
-            "localTime": "2025-11-15T12:10:00"
-          },
-          "dataChange": "",
-          "typeChange": "",
-          "expireTime": 1762507891,
-          "stopOvernight": 0,
-          "fareClass": "",
-          "status": null
-        }
-      ],
-      "provider": "VN",
-      "type": "SINGLE"
-    },
-    {
-      "comboInfo": null,
-      "flightType": "DOMESTIC",
-      "journeys": [
-        {
-          "airline": "VN",
-          "cancel": false,
-          "airlineName": "Vietnam Airlines",
-          "duration": 130,
-          "fareOptions": [
-            {
-              "key": "FARE_OPTION_c327538b34a4d034a4317a40fba69c06",
-              "comboRefs": null,
-              "journeyFareClass": "R",
-              "fareAmountBreakdowns": [
-                {
-                  "type": "ADULT",
-                  "changeType": null,
-                  "dataChange": null,
-                  "charges": [
-                    {
-                      "key": "ADTFARE_OPTION_c327538b34a4d034a4317a40fba69c06",
-                      "chargeType": {
-                        "code": "FARE",
-                        "type": "Fare",
-                        "category": "",
-                        "description": {
-                          "en": "Fare Charge",
-                          "vi": "Phí vé"
-                        }
-                      },
-                      "charge": {
-                        "base": 1709043,
-                        "tax": 726793,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 2435836,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": null,
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "",
-                      "extra": null
-                    },
-                    {
-                      "key": "",
-                      "chargeType": {
-                        "code": "BE_SERVICE",
-                        "type": "BE_SERVICE",
-                        "category": "",
-                        "description": {
-                          "en": "System Service Fee",
-                          "vi": "Phí dịch vụ hệ thống"
-                        }
-                      },
-                      "charge": {
-                        "base": 0,
-                        "tax": 0,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 5000,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": "VND",
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "Phí dịch vụ hệ thống",
-                      "extra": null
-                    }
-                  ],
-                  "totalFare": null,
-                  "change": false
-                }
-              ],
-              "fareInfos": [
-                {
-                  "fareClass": "R",
-                  "seatRemain": 4,
-                  "cabin": {
-                    "code": "Economy",
-                    "description": "R",
-                    "name": "Economy"
-                  },
-                  "fareType": {
-                    "code": "Economy",
-                    "description": "Economy"
-                  },
-                  "checkedBags": "1 kiện",
-                  "carryOnBags": ""
-                }
-              ],
-              "currency": {
-                "baseCurrency": true,
-                "code": null,
-                "description": "",
-                "exchangeRate": 1
-              },
-              "rules": null,
-              "privateFare": null,
-              "lccFare": null,
-              "ndcFare": null,
-              "refundableFare": null,
-              "ndcTimeLimit": 0,
-              "vfrFare": null,
-              "vfrFareWithRelations": null,
-              "vfrFareLaborVisa": null
-            },
-            {
-              "key": "FARE_OPTION_c28d738ddeac914c67b03c29e091df80",
-              "comboRefs": null,
-              "journeyFareClass": "U",
-              "fareAmountBreakdowns": [
-                {
-                  "type": "ADULT",
-                  "changeType": null,
-                  "dataChange": null,
-                  "charges": [
-                    {
-                      "key": "ADTFARE_OPTION_c28d738ddeac914c67b03c29e091df80",
-                      "chargeType": {
-                        "code": "FARE",
-                        "type": "Fare",
-                        "category": "",
-                        "description": {
-                          "en": "Fare Charge",
-                          "vi": "Phí vé"
-                        }
-                      },
-                      "charge": {
-                        "base": 3295453,
-                        "tax": 878144,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 4173597,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": null,
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "",
-                      "extra": null
-                    },
-                    {
-                      "key": "",
-                      "chargeType": {
-                        "code": "BE_SERVICE",
-                        "type": "BE_SERVICE",
-                        "category": "",
-                        "description": {
-                          "en": "System Service Fee",
-                          "vi": "Phí dịch vụ hệ thống"
-                        }
-                      },
-                      "charge": {
-                        "base": 0,
-                        "tax": 0,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 5000,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": "VND",
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "Phí dịch vụ hệ thống",
-                      "extra": null
-                    }
-                  ],
-                  "totalFare": null,
-                  "change": false
-                }
-              ],
-              "fareInfos": [
-                {
-                  "fareClass": "U",
-                  "seatRemain": 4,
-                  "cabin": {
-                    "code": "Premium",
-                    "description": "U",
-                    "name": "Premium"
-                  },
-                  "fareType": {
-                    "code": "Premium",
-                    "description": "Premium"
-                  },
-                  "checkedBags": "1 kiện",
-                  "carryOnBags": ""
-                }
-              ],
-              "currency": {
-                "baseCurrency": true,
-                "code": null,
-                "description": "",
-                "exchangeRate": 1
-              },
-              "rules": null,
-              "privateFare": null,
-              "lccFare": null,
-              "ndcFare": null,
-              "refundableFare": null,
-              "ndcTimeLimit": 0,
-              "vfrFare": null,
-              "vfrFareWithRelations": null,
-              "vfrFareLaborVisa": null
-            },
-            {
               "key": "FARE_OPTION_70756327e53319882256dd4c9d500c0b",
               "comboRefs": null,
               "journeyFareClass": "J",
@@ -3271,11 +3271,11 @@
                         }
                       },
                       "charge": {
-                        "base": 8805170,
-                        "tax": 1265624,
+                        "base": 6570124,
+                        "tax": 1163695,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 10070794,
+                        "total": 7733819,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -3382,10 +3382,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763179200,
+                "scheduleTime": 1764216000,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T11:00:00"
+                "localTime": "2025-11-27T11:00:00"
               },
               "arrival": {
                 "airport": {
@@ -3397,19 +3397,19 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763187000,
+                "scheduleTime": 1764223800,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T13:10:00"
+                "localTime": "2025-11-27T13:10:00"
               },
               "bookingClassArr": [
                 {
                   "fareClass": "R",
-                  "available": 4
+                  "available": 5
                 },
                 {
                   "fareClass": "U",
-                  "available": 4
+                  "available": 5
                 },
                 {
                   "fareClass": "J",
@@ -3433,10 +3433,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763179200,
+            "scheduleTime": 1764216000,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T11:00:00"
+            "localTime": "2025-11-27T11:00:00"
           },
           "arrival": {
             "airport": {
@@ -3448,10 +3448,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763187000,
+            "scheduleTime": 1764223800,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T13:10:00"
+            "localTime": "2025-11-27T13:10:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -3496,11 +3496,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1539705,
-                        "tax": 699633,
+                        "base": 1376729,
+                        "tax": 651419,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2239338,
+                        "total": 2028148,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -3548,7 +3548,7 @@
               "fareInfos": [
                 {
                   "fareClass": "R",
-                  "seatRemain": 7,
+                  "seatRemain": 4,
                   "cabin": {
                     "code": "Economy",
                     "description": "R",
@@ -3600,877 +3600,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3432408,
-                        "tax": 825199,
+                        "base": 3026082,
+                        "tax": 852333,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4257607,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": null,
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "",
-                      "extra": null
-                    },
-                    {
-                      "key": "",
-                      "chargeType": {
-                        "code": "BE_SERVICE",
-                        "type": "BE_SERVICE",
-                        "category": "",
-                        "description": {
-                          "en": "System Service Fee",
-                          "vi": "Phí dịch vụ hệ thống"
-                        }
-                      },
-                      "charge": {
-                        "base": 0,
-                        "tax": 0,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 5000,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": "VND",
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "Phí dịch vụ hệ thống",
-                      "extra": null
-                    }
-                  ],
-                  "totalFare": null,
-                  "change": false
-                }
-              ],
-              "fareInfos": [
-                {
-                  "fareClass": "U",
-                  "seatRemain": 3,
-                  "cabin": {
-                    "code": "Premium",
-                    "description": "U",
-                    "name": "Premium"
-                  },
-                  "fareType": {
-                    "code": "Premium",
-                    "description": "Premium"
-                  },
-                  "checkedBags": "1 kiện",
-                  "carryOnBags": ""
-                }
-              ],
-              "currency": {
-                "baseCurrency": true,
-                "code": null,
-                "description": "",
-                "exchangeRate": 1
-              },
-              "rules": null,
-              "privateFare": null,
-              "lccFare": null,
-              "ndcFare": null,
-              "refundableFare": null,
-              "ndcTimeLimit": 0,
-              "vfrFare": null,
-              "vfrFareWithRelations": null,
-              "vfrFareLaborVisa": null
-            },
-            {
-              "key": "FARE_OPTION_65dc2fd6ab090aa72f5fdf90795af20b",
-              "comboRefs": null,
-              "journeyFareClass": "J",
-              "fareAmountBreakdowns": [
-                {
-                  "type": "ADULT",
-                  "changeType": null,
-                  "dataChange": null,
-                  "charges": [
-                    {
-                      "key": "ADTFARE_OPTION_65dc2fd6ab090aa72f5fdf90795af20b",
-                      "chargeType": {
-                        "code": "FARE",
-                        "type": "Fare",
-                        "category": "",
-                        "description": {
-                          "en": "Fare Charge",
-                          "vi": "Phí vé"
-                        }
-                      },
-                      "charge": {
-                        "base": 8308348,
-                        "tax": 1233697,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 9542045,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": null,
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "",
-                      "extra": null
-                    },
-                    {
-                      "key": "",
-                      "chargeType": {
-                        "code": "BE_SERVICE",
-                        "type": "BE_SERVICE",
-                        "category": "",
-                        "description": {
-                          "en": "System Service Fee",
-                          "vi": "Phí dịch vụ hệ thống"
-                        }
-                      },
-                      "charge": {
-                        "base": 0,
-                        "tax": 0,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 5000,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": "VND",
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "Phí dịch vụ hệ thống",
-                      "extra": null
-                    }
-                  ],
-                  "totalFare": null,
-                  "change": false
-                }
-              ],
-              "fareInfos": [
-                {
-                  "fareClass": "J",
-                  "seatRemain": 7,
-                  "cabin": {
-                    "code": "Business",
-                    "description": "J",
-                    "name": "Business"
-                  },
-                  "fareType": {
-                    "code": "Business",
-                    "description": "Business"
-                  },
-                  "checkedBags": "1 kiện",
-                  "carryOnBags": ""
-                }
-              ],
-              "currency": {
-                "baseCurrency": true,
-                "code": null,
-                "description": "",
-                "exchangeRate": 1
-              },
-              "rules": null,
-              "privateFare": null,
-              "lccFare": null,
-              "ndcFare": null,
-              "refundableFare": null,
-              "ndcTimeLimit": 0,
-              "vfrFare": null,
-              "vfrFareWithRelations": null,
-              "vfrFareLaborVisa": null
-            }
-          ],
-          "key": "JOURNEY_0_c72125c893ab998fade77afd531a88a8",
-          "leg": 0,
-          "numOfStops": 0,
-          "operating": "VN",
-          "operatingName": "Vietnam Airlines",
-          "segments": [
-            {
-              "key": "SEGMENT_d35a8e0c678524f03043db2b14592878",
-              "cancel": null,
-              "index": null,
-              "airline": "VN",
-              "airlineName": "Vietnam Airlines",
-              "duration": 130,
-              "delay": 0,
-              "flightNumber": "251",
-              "operating": "VN",
-              "operatingName": "Vietnam Airlines",
-              "stopPoint": null,
-              "departure": {
-                "airport": {
-                  "code": "HAN",
-                  "name": "Sân bay quốc tế Nội Bài",
-                  "utcOffset": {
-                    "iso": "+07:00",
-                    "zone": 7
-                  },
-                  "terminal": "1"
-                },
-                "scheduleTime": 1763182800,
-                "dataChange": "",
-                "typeChange": "",
-                "localTime": "2025-11-15T12:00:00"
-              },
-              "arrival": {
-                "airport": {
-                  "code": "SGN",
-                  "name": "Sân bay quốc tế Tân Sơn Nhất",
-                  "utcOffset": {
-                    "iso": "+07:00",
-                    "zone": 7
-                  },
-                  "terminal": "3"
-                },
-                "scheduleTime": 1763190600,
-                "dataChange": "",
-                "typeChange": "",
-                "localTime": "2025-11-15T14:10:00"
-              },
-              "bookingClassArr": [
-                {
-                  "fareClass": "R",
-                  "available": 7
-                },
-                {
-                  "fareClass": "U",
-                  "available": 3
-                },
-                {
-                  "fareClass": "J",
-                  "available": 7
-                }
-              ],
-              "bookedInfo": null,
-              "fareType": null,
-              "modelAirplane": "787",
-              "modelAirplaneName": "Boeing B787",
-              "codeAirline": ""
-            }
-          ],
-          "departure": {
-            "airport": {
-              "code": "HAN",
-              "name": "Sân bay quốc tế Nội Bài",
-              "utcOffset": {
-                "iso": "+07:00",
-                "zone": 7
-              },
-              "terminal": ""
-            },
-            "scheduleTime": 1763182800,
-            "dataChange": "",
-            "typeChange": "",
-            "localTime": "2025-11-15T12:00:00"
-          },
-          "arrival": {
-            "airport": {
-              "code": "SGN",
-              "name": "Sân bay quốc tế Tân Sơn Nhất",
-              "utcOffset": {
-                "iso": "+07:00",
-                "zone": 7
-              },
-              "terminal": ""
-            },
-            "scheduleTime": 1763190600,
-            "dataChange": "",
-            "typeChange": "",
-            "localTime": "2025-11-15T14:10:00"
-          },
-          "dataChange": "",
-          "typeChange": "",
-          "expireTime": 1762507891,
-          "stopOvernight": 0,
-          "fareClass": "",
-          "status": null
-        }
-      ],
-      "provider": "VN",
-      "type": "SINGLE"
-    },
-    {
-      "comboInfo": null,
-      "flightType": "DOMESTIC",
-      "journeys": [
-        {
-          "airline": "VN",
-          "cancel": false,
-          "airlineName": "Vietnam Airlines",
-          "duration": 130,
-          "fareOptions": [
-            {
-              "key": "FARE_OPTION_53347f653c651cadd12eb724f9ed45b2",
-              "comboRefs": null,
-              "journeyFareClass": "R",
-              "fareAmountBreakdowns": [
-                {
-                  "type": "ADULT",
-                  "changeType": null,
-                  "dataChange": null,
-                  "charges": [
-                    {
-                      "key": "ADTFARE_OPTION_53347f653c651cadd12eb724f9ed45b2",
-                      "chargeType": {
-                        "code": "FARE",
-                        "type": "Fare",
-                        "category": "",
-                        "description": {
-                          "en": "Fare Charge",
-                          "vi": "Phí vé"
-                        }
-                      },
-                      "charge": {
-                        "base": 1684356,
-                        "tax": 782681,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 2467037,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": null,
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "",
-                      "extra": null
-                    },
-                    {
-                      "key": "",
-                      "chargeType": {
-                        "code": "BE_SERVICE",
-                        "type": "BE_SERVICE",
-                        "category": "",
-                        "description": {
-                          "en": "System Service Fee",
-                          "vi": "Phí dịch vụ hệ thống"
-                        }
-                      },
-                      "charge": {
-                        "base": 0,
-                        "tax": 0,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 5000,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": "VND",
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "Phí dịch vụ hệ thống",
-                      "extra": null
-                    }
-                  ],
-                  "totalFare": null,
-                  "change": false
-                }
-              ],
-              "fareInfos": [
-                {
-                  "fareClass": "R",
-                  "seatRemain": 3,
-                  "cabin": {
-                    "code": "Economy",
-                    "description": "R",
-                    "name": "Economy"
-                  },
-                  "fareType": {
-                    "code": "Economy",
-                    "description": "Economy"
-                  },
-                  "checkedBags": "1 kiện",
-                  "carryOnBags": ""
-                }
-              ],
-              "currency": {
-                "baseCurrency": true,
-                "code": null,
-                "description": "",
-                "exchangeRate": 1
-              },
-              "rules": null,
-              "privateFare": null,
-              "lccFare": null,
-              "ndcFare": null,
-              "refundableFare": null,
-              "ndcTimeLimit": 0,
-              "vfrFare": null,
-              "vfrFareWithRelations": null,
-              "vfrFareLaborVisa": null
-            },
-            {
-              "key": "FARE_OPTION_fad874f6cb8ab468ede4918433fc66c9",
-              "comboRefs": null,
-              "journeyFareClass": "U",
-              "fareAmountBreakdowns": [
-                {
-                  "type": "ADULT",
-                  "changeType": null,
-                  "dataChange": null,
-                  "charges": [
-                    {
-                      "key": "ADTFARE_OPTION_fad874f6cb8ab468ede4918433fc66c9",
-                      "chargeType": {
-                        "code": "FARE",
-                        "type": "Fare",
-                        "category": "",
-                        "description": {
-                          "en": "Fare Charge",
-                          "vi": "Phí vé"
-                        }
-                      },
-                      "charge": {
-                        "base": 3739341,
-                        "tax": 898520,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 4637861,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": null,
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "",
-                      "extra": null
-                    },
-                    {
-                      "key": "",
-                      "chargeType": {
-                        "code": "BE_SERVICE",
-                        "type": "BE_SERVICE",
-                        "category": "",
-                        "description": {
-                          "en": "System Service Fee",
-                          "vi": "Phí dịch vụ hệ thống"
-                        }
-                      },
-                      "charge": {
-                        "base": 0,
-                        "tax": 0,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 5000,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": "VND",
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "Phí dịch vụ hệ thống",
-                      "extra": null
-                    }
-                  ],
-                  "totalFare": null,
-                  "change": false
-                }
-              ],
-              "fareInfos": [
-                {
-                  "fareClass": "U",
-                  "seatRemain": 7,
-                  "cabin": {
-                    "code": "Premium",
-                    "description": "U",
-                    "name": "Premium"
-                  },
-                  "fareType": {
-                    "code": "Premium",
-                    "description": "Premium"
-                  },
-                  "checkedBags": "1 kiện",
-                  "carryOnBags": ""
-                }
-              ],
-              "currency": {
-                "baseCurrency": true,
-                "code": null,
-                "description": "",
-                "exchangeRate": 1
-              },
-              "rules": null,
-              "privateFare": null,
-              "lccFare": null,
-              "ndcFare": null,
-              "refundableFare": null,
-              "ndcTimeLimit": 0,
-              "vfrFare": null,
-              "vfrFareWithRelations": null,
-              "vfrFareLaborVisa": null
-            },
-            {
-              "key": "FARE_OPTION_f5113ad5fb83292d66189d20cbe4896f",
-              "comboRefs": null,
-              "journeyFareClass": "J",
-              "fareAmountBreakdowns": [
-                {
-                  "type": "ADULT",
-                  "changeType": null,
-                  "dataChange": null,
-                  "charges": [
-                    {
-                      "key": "ADTFARE_OPTION_f5113ad5fb83292d66189d20cbe4896f",
-                      "chargeType": {
-                        "code": "FARE",
-                        "type": "Fare",
-                        "category": "",
-                        "description": {
-                          "en": "Fare Charge",
-                          "vi": "Phí vé"
-                        }
-                      },
-                      "charge": {
-                        "base": 8155445,
-                        "tax": 1295223,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 9450668,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": null,
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "",
-                      "extra": null
-                    },
-                    {
-                      "key": "",
-                      "chargeType": {
-                        "code": "BE_SERVICE",
-                        "type": "BE_SERVICE",
-                        "category": "",
-                        "description": {
-                          "en": "System Service Fee",
-                          "vi": "Phí dịch vụ hệ thống"
-                        }
-                      },
-                      "charge": {
-                        "base": 0,
-                        "tax": 0,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 5000,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": "VND",
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "Phí dịch vụ hệ thống",
-                      "extra": null
-                    }
-                  ],
-                  "totalFare": null,
-                  "change": false
-                }
-              ],
-              "fareInfos": [
-                {
-                  "fareClass": "J",
-                  "seatRemain": 4,
-                  "cabin": {
-                    "code": "Business",
-                    "description": "J",
-                    "name": "Business"
-                  },
-                  "fareType": {
-                    "code": "Business",
-                    "description": "Business"
-                  },
-                  "checkedBags": "1 kiện",
-                  "carryOnBags": ""
-                }
-              ],
-              "currency": {
-                "baseCurrency": true,
-                "code": null,
-                "description": "",
-                "exchangeRate": 1
-              },
-              "rules": null,
-              "privateFare": null,
-              "lccFare": null,
-              "ndcFare": null,
-              "refundableFare": null,
-              "ndcTimeLimit": 0,
-              "vfrFare": null,
-              "vfrFareWithRelations": null,
-              "vfrFareLaborVisa": null
-            }
-          ],
-          "key": "JOURNEY_0_43e6a3d3292ebc41add642e58f653dcb",
-          "leg": 0,
-          "numOfStops": 0,
-          "operating": "VN",
-          "operatingName": "Vietnam Airlines",
-          "segments": [
-            {
-              "key": "SEGMENT_6897457310d09df05598a6175edf1952",
-              "cancel": null,
-              "index": null,
-              "airline": "VN",
-              "airlineName": "Vietnam Airlines",
-              "duration": 130,
-              "delay": 0,
-              "flightNumber": "213",
-              "operating": "VN",
-              "operatingName": "Vietnam Airlines",
-              "stopPoint": null,
-              "departure": {
-                "airport": {
-                  "code": "HAN",
-                  "name": "Sân bay quốc tế Nội Bài",
-                  "utcOffset": {
-                    "iso": "+07:00",
-                    "zone": 7
-                  },
-                  "terminal": "1"
-                },
-                "scheduleTime": 1763186400,
-                "dataChange": "",
-                "typeChange": "",
-                "localTime": "2025-11-15T13:00:00"
-              },
-              "arrival": {
-                "airport": {
-                  "code": "SGN",
-                  "name": "Sân bay quốc tế Tân Sơn Nhất",
-                  "utcOffset": {
-                    "iso": "+07:00",
-                    "zone": 7
-                  },
-                  "terminal": "3"
-                },
-                "scheduleTime": 1763194200,
-                "dataChange": "",
-                "typeChange": "",
-                "localTime": "2025-11-15T15:10:00"
-              },
-              "bookingClassArr": [
-                {
-                  "fareClass": "R",
-                  "available": 3
-                },
-                {
-                  "fareClass": "U",
-                  "available": 7
-                },
-                {
-                  "fareClass": "J",
-                  "available": 4
-                }
-              ],
-              "bookedInfo": null,
-              "fareType": null,
-              "modelAirplane": "359",
-              "modelAirplaneName": "Airbus A350-900",
-              "codeAirline": ""
-            }
-          ],
-          "departure": {
-            "airport": {
-              "code": "HAN",
-              "name": "Sân bay quốc tế Nội Bài",
-              "utcOffset": {
-                "iso": "+07:00",
-                "zone": 7
-              },
-              "terminal": ""
-            },
-            "scheduleTime": 1763186400,
-            "dataChange": "",
-            "typeChange": "",
-            "localTime": "2025-11-15T13:00:00"
-          },
-          "arrival": {
-            "airport": {
-              "code": "SGN",
-              "name": "Sân bay quốc tế Tân Sơn Nhất",
-              "utcOffset": {
-                "iso": "+07:00",
-                "zone": 7
-              },
-              "terminal": ""
-            },
-            "scheduleTime": 1763194200,
-            "dataChange": "",
-            "typeChange": "",
-            "localTime": "2025-11-15T15:10:00"
-          },
-          "dataChange": "",
-          "typeChange": "",
-          "expireTime": 1762507891,
-          "stopOvernight": 0,
-          "fareClass": "",
-          "status": null
-        }
-      ],
-      "provider": "VN",
-      "type": "SINGLE"
-    },
-    {
-      "comboInfo": null,
-      "flightType": "DOMESTIC",
-      "journeys": [
-        {
-          "airline": "VN",
-          "cancel": false,
-          "airlineName": "Vietnam Airlines",
-          "duration": 130,
-          "fareOptions": [
-            {
-              "key": "FARE_OPTION_3ded054b0cb21b0fdf624a565191ad22",
-              "comboRefs": null,
-              "journeyFareClass": "R",
-              "fareAmountBreakdowns": [
-                {
-                  "type": "ADULT",
-                  "changeType": null,
-                  "dataChange": null,
-                  "charges": [
-                    {
-                      "key": "ADTFARE_OPTION_3ded054b0cb21b0fdf624a565191ad22",
-                      "chargeType": {
-                        "code": "FARE",
-                        "type": "Fare",
-                        "category": "",
-                        "description": {
-                          "en": "Fare Charge",
-                          "vi": "Phí vé"
-                        }
-                      },
-                      "charge": {
-                        "base": 1763982,
-                        "tax": 816688,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 2580670,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": null,
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "",
-                      "extra": null
-                    },
-                    {
-                      "key": "",
-                      "chargeType": {
-                        "code": "BE_SERVICE",
-                        "type": "BE_SERVICE",
-                        "category": "",
-                        "description": {
-                          "en": "System Service Fee",
-                          "vi": "Phí dịch vụ hệ thống"
-                        }
-                      },
-                      "charge": {
-                        "base": 0,
-                        "tax": 0,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 5000,
-                        "discount": 0,
-                        "currency": {
-                          "baseCurrency": true,
-                          "code": "VND",
-                          "description": "",
-                          "exchangeRate": 1
-                        }
-                      },
-                      "description": "Phí dịch vụ hệ thống",
-                      "extra": null
-                    }
-                  ],
-                  "totalFare": null,
-                  "change": false
-                }
-              ],
-              "fareInfos": [
-                {
-                  "fareClass": "R",
-                  "seatRemain": 3,
-                  "cabin": {
-                    "code": "Economy",
-                    "description": "R",
-                    "name": "Economy"
-                  },
-                  "fareType": {
-                    "code": "Economy",
-                    "description": "Economy"
-                  },
-                  "checkedBags": "1 kiện",
-                  "carryOnBags": ""
-                }
-              ],
-              "currency": {
-                "baseCurrency": true,
-                "code": null,
-                "description": "",
-                "exchangeRate": 1
-              },
-              "rules": null,
-              "privateFare": null,
-              "lccFare": null,
-              "ndcFare": null,
-              "refundableFare": null,
-              "ndcTimeLimit": 0,
-              "vfrFare": null,
-              "vfrFareWithRelations": null,
-              "vfrFareLaborVisa": null
-            },
-            {
-              "key": "FARE_OPTION_5fcfd9ac5a32f5a9d8fda691f325ac94",
-              "comboRefs": null,
-              "journeyFareClass": "U",
-              "fareAmountBreakdowns": [
-                {
-                  "type": "ADULT",
-                  "changeType": null,
-                  "dataChange": null,
-                  "charges": [
-                    {
-                      "key": "ADTFARE_OPTION_5fcfd9ac5a32f5a9d8fda691f325ac94",
-                      "chargeType": {
-                        "code": "FARE",
-                        "type": "Fare",
-                        "category": "",
-                        "description": {
-                          "en": "Fare Charge",
-                          "vi": "Phí vé"
-                        }
-                      },
-                      "charge": {
-                        "base": 3609584,
-                        "tax": 897763,
-                        "applied": 0,
-                        "surCharge": 0,
-                        "total": 4507347,
+                        "total": 3878415,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -4549,7 +3683,7 @@
               "vfrFareLaborVisa": null
             },
             {
-              "key": "FARE_OPTION_dfd67b94ebb313c176822295d6598ac3",
+              "key": "FARE_OPTION_65dc2fd6ab090aa72f5fdf90795af20b",
               "comboRefs": null,
               "journeyFareClass": "J",
               "fareAmountBreakdowns": [
@@ -4559,7 +3693,7 @@
                   "dataChange": null,
                   "charges": [
                     {
-                      "key": "ADTFARE_OPTION_dfd67b94ebb313c176822295d6598ac3",
+                      "key": "ADTFARE_OPTION_65dc2fd6ab090aa72f5fdf90795af20b",
                       "chargeType": {
                         "code": "FARE",
                         "type": "Fare",
@@ -4570,11 +3704,11 @@
                         }
                       },
                       "charge": {
-                        "base": 8586127,
-                        "tax": 1298631,
+                        "base": 7940958,
+                        "tax": 1116562,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 9884758,
+                        "total": 9057520,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -4622,7 +3756,873 @@
               "fareInfos": [
                 {
                   "fareClass": "J",
-                  "seatRemain": 9,
+                  "seatRemain": 6,
+                  "cabin": {
+                    "code": "Business",
+                    "description": "J",
+                    "name": "Business"
+                  },
+                  "fareType": {
+                    "code": "Business",
+                    "description": "Business"
+                  },
+                  "checkedBags": "1 kiện",
+                  "carryOnBags": ""
+                }
+              ],
+              "currency": {
+                "baseCurrency": true,
+                "code": null,
+                "description": "",
+                "exchangeRate": 1
+              },
+              "rules": null,
+              "privateFare": null,
+              "lccFare": null,
+              "ndcFare": null,
+              "refundableFare": null,
+              "ndcTimeLimit": 0,
+              "vfrFare": null,
+              "vfrFareWithRelations": null,
+              "vfrFareLaborVisa": null
+            }
+          ],
+          "key": "JOURNEY_0_c72125c893ab998fade77afd531a88a8",
+          "leg": 0,
+          "numOfStops": 0,
+          "operating": "VN",
+          "operatingName": "Vietnam Airlines",
+          "segments": [
+            {
+              "key": "SEGMENT_d35a8e0c678524f03043db2b14592878",
+              "cancel": null,
+              "index": null,
+              "airline": "VN",
+              "airlineName": "Vietnam Airlines",
+              "duration": 130,
+              "delay": 0,
+              "flightNumber": "251",
+              "operating": "VN",
+              "operatingName": "Vietnam Airlines",
+              "stopPoint": null,
+              "departure": {
+                "airport": {
+                  "code": "HAN",
+                  "name": "Sân bay quốc tế Nội Bài",
+                  "utcOffset": {
+                    "iso": "+07:00",
+                    "zone": 7
+                  },
+                  "terminal": "1"
+                },
+                "scheduleTime": 1764219600,
+                "dataChange": "",
+                "typeChange": "",
+                "localTime": "2025-11-27T12:00:00"
+              },
+              "arrival": {
+                "airport": {
+                  "code": "SGN",
+                  "name": "Sân bay quốc tế Tân Sơn Nhất",
+                  "utcOffset": {
+                    "iso": "+07:00",
+                    "zone": 7
+                  },
+                  "terminal": "3"
+                },
+                "scheduleTime": 1764227400,
+                "dataChange": "",
+                "typeChange": "",
+                "localTime": "2025-11-27T14:10:00"
+              },
+              "bookingClassArr": [
+                {
+                  "fareClass": "R",
+                  "available": 4
+                },
+                {
+                  "fareClass": "U",
+                  "available": 8
+                },
+                {
+                  "fareClass": "J",
+                  "available": 6
+                }
+              ],
+              "bookedInfo": null,
+              "fareType": null,
+              "modelAirplane": "787",
+              "modelAirplaneName": "Boeing B787",
+              "codeAirline": ""
+            }
+          ],
+          "departure": {
+            "airport": {
+              "code": "HAN",
+              "name": "Sân bay quốc tế Nội Bài",
+              "utcOffset": {
+                "iso": "+07:00",
+                "zone": 7
+              },
+              "terminal": ""
+            },
+            "scheduleTime": 1764219600,
+            "dataChange": "",
+            "typeChange": "",
+            "localTime": "2025-11-27T12:00:00"
+          },
+          "arrival": {
+            "airport": {
+              "code": "SGN",
+              "name": "Sân bay quốc tế Tân Sơn Nhất",
+              "utcOffset": {
+                "iso": "+07:00",
+                "zone": 7
+              },
+              "terminal": ""
+            },
+            "scheduleTime": 1764227400,
+            "dataChange": "",
+            "typeChange": "",
+            "localTime": "2025-11-27T14:10:00"
+          },
+          "dataChange": "",
+          "typeChange": "",
+          "expireTime": 1762507891,
+          "stopOvernight": 0,
+          "fareClass": "",
+          "status": null
+        }
+      ],
+      "provider": "VN",
+      "type": "SINGLE"
+    },
+    {
+      "comboInfo": null,
+      "flightType": "DOMESTIC",
+      "journeys": [
+        {
+          "airline": "VN",
+          "cancel": false,
+          "airlineName": "Vietnam Airlines",
+          "duration": 130,
+          "fareOptions": [
+            {
+              "key": "FARE_OPTION_53347f653c651cadd12eb724f9ed45b2",
+              "comboRefs": null,
+              "journeyFareClass": "R",
+              "fareAmountBreakdowns": [
+                {
+                  "type": "ADULT",
+                  "changeType": null,
+                  "dataChange": null,
+                  "charges": [
+                    {
+                      "key": "ADTFARE_OPTION_53347f653c651cadd12eb724f9ed45b2",
+                      "chargeType": {
+                        "code": "FARE",
+                        "type": "Fare",
+                        "category": "",
+                        "description": {
+                          "en": "Fare Charge",
+                          "vi": "Phí vé"
+                        }
+                      },
+                      "charge": {
+                        "base": 1471775,
+                        "tax": 611359,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 2083134,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": null,
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "",
+                      "extra": null
+                    },
+                    {
+                      "key": "",
+                      "chargeType": {
+                        "code": "BE_SERVICE",
+                        "type": "BE_SERVICE",
+                        "category": "",
+                        "description": {
+                          "en": "System Service Fee",
+                          "vi": "Phí dịch vụ hệ thống"
+                        }
+                      },
+                      "charge": {
+                        "base": 0,
+                        "tax": 0,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 5000,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": "VND",
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "Phí dịch vụ hệ thống",
+                      "extra": null
+                    }
+                  ],
+                  "totalFare": null,
+                  "change": false
+                }
+              ],
+              "fareInfos": [
+                {
+                  "fareClass": "R",
+                  "seatRemain": 5,
+                  "cabin": {
+                    "code": "Economy",
+                    "description": "R",
+                    "name": "Economy"
+                  },
+                  "fareType": {
+                    "code": "Economy",
+                    "description": "Economy"
+                  },
+                  "checkedBags": "1 kiện",
+                  "carryOnBags": ""
+                }
+              ],
+              "currency": {
+                "baseCurrency": true,
+                "code": null,
+                "description": "",
+                "exchangeRate": 1
+              },
+              "rules": null,
+              "privateFare": null,
+              "lccFare": null,
+              "ndcFare": null,
+              "refundableFare": null,
+              "ndcTimeLimit": 0,
+              "vfrFare": null,
+              "vfrFareWithRelations": null,
+              "vfrFareLaborVisa": null
+            },
+            {
+              "key": "FARE_OPTION_fad874f6cb8ab468ede4918433fc66c9",
+              "comboRefs": null,
+              "journeyFareClass": "U",
+              "fareAmountBreakdowns": [
+                {
+                  "type": "ADULT",
+                  "changeType": null,
+                  "dataChange": null,
+                  "charges": [
+                    {
+                      "key": "ADTFARE_OPTION_fad874f6cb8ab468ede4918433fc66c9",
+                      "chargeType": {
+                        "code": "FARE",
+                        "type": "Fare",
+                        "category": "",
+                        "description": {
+                          "en": "Fare Charge",
+                          "vi": "Phí vé"
+                        }
+                      },
+                      "charge": {
+                        "base": 2871805,
+                        "tax": 843684,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 3715489,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": null,
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "",
+                      "extra": null
+                    },
+                    {
+                      "key": "",
+                      "chargeType": {
+                        "code": "BE_SERVICE",
+                        "type": "BE_SERVICE",
+                        "category": "",
+                        "description": {
+                          "en": "System Service Fee",
+                          "vi": "Phí dịch vụ hệ thống"
+                        }
+                      },
+                      "charge": {
+                        "base": 0,
+                        "tax": 0,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 5000,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": "VND",
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "Phí dịch vụ hệ thống",
+                      "extra": null
+                    }
+                  ],
+                  "totalFare": null,
+                  "change": false
+                }
+              ],
+              "fareInfos": [
+                {
+                  "fareClass": "U",
+                  "seatRemain": 3,
+                  "cabin": {
+                    "code": "Premium",
+                    "description": "U",
+                    "name": "Premium"
+                  },
+                  "fareType": {
+                    "code": "Premium",
+                    "description": "Premium"
+                  },
+                  "checkedBags": "1 kiện",
+                  "carryOnBags": ""
+                }
+              ],
+              "currency": {
+                "baseCurrency": true,
+                "code": null,
+                "description": "",
+                "exchangeRate": 1
+              },
+              "rules": null,
+              "privateFare": null,
+              "lccFare": null,
+              "ndcFare": null,
+              "refundableFare": null,
+              "ndcTimeLimit": 0,
+              "vfrFare": null,
+              "vfrFareWithRelations": null,
+              "vfrFareLaborVisa": null
+            },
+            {
+              "key": "FARE_OPTION_f5113ad5fb83292d66189d20cbe4896f",
+              "comboRefs": null,
+              "journeyFareClass": "J",
+              "fareAmountBreakdowns": [
+                {
+                  "type": "ADULT",
+                  "changeType": null,
+                  "dataChange": null,
+                  "charges": [
+                    {
+                      "key": "ADTFARE_OPTION_f5113ad5fb83292d66189d20cbe4896f",
+                      "chargeType": {
+                        "code": "FARE",
+                        "type": "Fare",
+                        "category": "",
+                        "description": {
+                          "en": "Fare Charge",
+                          "vi": "Phí vé"
+                        }
+                      },
+                      "charge": {
+                        "base": 6663376,
+                        "tax": 1147553,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 7810929,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": null,
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "",
+                      "extra": null
+                    },
+                    {
+                      "key": "",
+                      "chargeType": {
+                        "code": "BE_SERVICE",
+                        "type": "BE_SERVICE",
+                        "category": "",
+                        "description": {
+                          "en": "System Service Fee",
+                          "vi": "Phí dịch vụ hệ thống"
+                        }
+                      },
+                      "charge": {
+                        "base": 0,
+                        "tax": 0,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 5000,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": "VND",
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "Phí dịch vụ hệ thống",
+                      "extra": null
+                    }
+                  ],
+                  "totalFare": null,
+                  "change": false
+                }
+              ],
+              "fareInfos": [
+                {
+                  "fareClass": "J",
+                  "seatRemain": 6,
+                  "cabin": {
+                    "code": "Business",
+                    "description": "J",
+                    "name": "Business"
+                  },
+                  "fareType": {
+                    "code": "Business",
+                    "description": "Business"
+                  },
+                  "checkedBags": "1 kiện",
+                  "carryOnBags": ""
+                }
+              ],
+              "currency": {
+                "baseCurrency": true,
+                "code": null,
+                "description": "",
+                "exchangeRate": 1
+              },
+              "rules": null,
+              "privateFare": null,
+              "lccFare": null,
+              "ndcFare": null,
+              "refundableFare": null,
+              "ndcTimeLimit": 0,
+              "vfrFare": null,
+              "vfrFareWithRelations": null,
+              "vfrFareLaborVisa": null
+            }
+          ],
+          "key": "JOURNEY_0_43e6a3d3292ebc41add642e58f653dcb",
+          "leg": 0,
+          "numOfStops": 0,
+          "operating": "VN",
+          "operatingName": "Vietnam Airlines",
+          "segments": [
+            {
+              "key": "SEGMENT_6897457310d09df05598a6175edf1952",
+              "cancel": null,
+              "index": null,
+              "airline": "VN",
+              "airlineName": "Vietnam Airlines",
+              "duration": 130,
+              "delay": 0,
+              "flightNumber": "213",
+              "operating": "VN",
+              "operatingName": "Vietnam Airlines",
+              "stopPoint": null,
+              "departure": {
+                "airport": {
+                  "code": "HAN",
+                  "name": "Sân bay quốc tế Nội Bài",
+                  "utcOffset": {
+                    "iso": "+07:00",
+                    "zone": 7
+                  },
+                  "terminal": "1"
+                },
+                "scheduleTime": 1764223200,
+                "dataChange": "",
+                "typeChange": "",
+                "localTime": "2025-11-27T13:00:00"
+              },
+              "arrival": {
+                "airport": {
+                  "code": "SGN",
+                  "name": "Sân bay quốc tế Tân Sơn Nhất",
+                  "utcOffset": {
+                    "iso": "+07:00",
+                    "zone": 7
+                  },
+                  "terminal": "3"
+                },
+                "scheduleTime": 1764231000,
+                "dataChange": "",
+                "typeChange": "",
+                "localTime": "2025-11-27T15:10:00"
+              },
+              "bookingClassArr": [
+                {
+                  "fareClass": "R",
+                  "available": 5
+                },
+                {
+                  "fareClass": "U",
+                  "available": 3
+                },
+                {
+                  "fareClass": "J",
+                  "available": 6
+                }
+              ],
+              "bookedInfo": null,
+              "fareType": null,
+              "modelAirplane": "359",
+              "modelAirplaneName": "Airbus A350-900",
+              "codeAirline": ""
+            }
+          ],
+          "departure": {
+            "airport": {
+              "code": "HAN",
+              "name": "Sân bay quốc tế Nội Bài",
+              "utcOffset": {
+                "iso": "+07:00",
+                "zone": 7
+              },
+              "terminal": ""
+            },
+            "scheduleTime": 1764223200,
+            "dataChange": "",
+            "typeChange": "",
+            "localTime": "2025-11-27T13:00:00"
+          },
+          "arrival": {
+            "airport": {
+              "code": "SGN",
+              "name": "Sân bay quốc tế Tân Sơn Nhất",
+              "utcOffset": {
+                "iso": "+07:00",
+                "zone": 7
+              },
+              "terminal": ""
+            },
+            "scheduleTime": 1764231000,
+            "dataChange": "",
+            "typeChange": "",
+            "localTime": "2025-11-27T15:10:00"
+          },
+          "dataChange": "",
+          "typeChange": "",
+          "expireTime": 1762507891,
+          "stopOvernight": 0,
+          "fareClass": "",
+          "status": null
+        }
+      ],
+      "provider": "VN",
+      "type": "SINGLE"
+    },
+    {
+      "comboInfo": null,
+      "flightType": "DOMESTIC",
+      "journeys": [
+        {
+          "airline": "VN",
+          "cancel": false,
+          "airlineName": "Vietnam Airlines",
+          "duration": 130,
+          "fareOptions": [
+            {
+              "key": "FARE_OPTION_3ded054b0cb21b0fdf624a565191ad22",
+              "comboRefs": null,
+              "journeyFareClass": "R",
+              "fareAmountBreakdowns": [
+                {
+                  "type": "ADULT",
+                  "changeType": null,
+                  "dataChange": null,
+                  "charges": [
+                    {
+                      "key": "ADTFARE_OPTION_3ded054b0cb21b0fdf624a565191ad22",
+                      "chargeType": {
+                        "code": "FARE",
+                        "type": "Fare",
+                        "category": "",
+                        "description": {
+                          "en": "Fare Charge",
+                          "vi": "Phí vé"
+                        }
+                      },
+                      "charge": {
+                        "base": 1459822,
+                        "tax": 679460,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 2139282,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": null,
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "",
+                      "extra": null
+                    },
+                    {
+                      "key": "",
+                      "chargeType": {
+                        "code": "BE_SERVICE",
+                        "type": "BE_SERVICE",
+                        "category": "",
+                        "description": {
+                          "en": "System Service Fee",
+                          "vi": "Phí dịch vụ hệ thống"
+                        }
+                      },
+                      "charge": {
+                        "base": 0,
+                        "tax": 0,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 5000,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": "VND",
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "Phí dịch vụ hệ thống",
+                      "extra": null
+                    }
+                  ],
+                  "totalFare": null,
+                  "change": false
+                }
+              ],
+              "fareInfos": [
+                {
+                  "fareClass": "R",
+                  "seatRemain": 5,
+                  "cabin": {
+                    "code": "Economy",
+                    "description": "R",
+                    "name": "Economy"
+                  },
+                  "fareType": {
+                    "code": "Economy",
+                    "description": "Economy"
+                  },
+                  "checkedBags": "1 kiện",
+                  "carryOnBags": ""
+                }
+              ],
+              "currency": {
+                "baseCurrency": true,
+                "code": null,
+                "description": "",
+                "exchangeRate": 1
+              },
+              "rules": null,
+              "privateFare": null,
+              "lccFare": null,
+              "ndcFare": null,
+              "refundableFare": null,
+              "ndcTimeLimit": 0,
+              "vfrFare": null,
+              "vfrFareWithRelations": null,
+              "vfrFareLaborVisa": null
+            },
+            {
+              "key": "FARE_OPTION_5fcfd9ac5a32f5a9d8fda691f325ac94",
+              "comboRefs": null,
+              "journeyFareClass": "U",
+              "fareAmountBreakdowns": [
+                {
+                  "type": "ADULT",
+                  "changeType": null,
+                  "dataChange": null,
+                  "charges": [
+                    {
+                      "key": "ADTFARE_OPTION_5fcfd9ac5a32f5a9d8fda691f325ac94",
+                      "chargeType": {
+                        "code": "FARE",
+                        "type": "Fare",
+                        "category": "",
+                        "description": {
+                          "en": "Fare Charge",
+                          "vi": "Phí vé"
+                        }
+                      },
+                      "charge": {
+                        "base": 2945445,
+                        "tax": 732694,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 3678139,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": null,
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "",
+                      "extra": null
+                    },
+                    {
+                      "key": "",
+                      "chargeType": {
+                        "code": "BE_SERVICE",
+                        "type": "BE_SERVICE",
+                        "category": "",
+                        "description": {
+                          "en": "System Service Fee",
+                          "vi": "Phí dịch vụ hệ thống"
+                        }
+                      },
+                      "charge": {
+                        "base": 0,
+                        "tax": 0,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 5000,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": "VND",
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "Phí dịch vụ hệ thống",
+                      "extra": null
+                    }
+                  ],
+                  "totalFare": null,
+                  "change": false
+                }
+              ],
+              "fareInfos": [
+                {
+                  "fareClass": "U",
+                  "seatRemain": 1,
+                  "cabin": {
+                    "code": "Premium",
+                    "description": "U",
+                    "name": "Premium"
+                  },
+                  "fareType": {
+                    "code": "Premium",
+                    "description": "Premium"
+                  },
+                  "checkedBags": "1 kiện",
+                  "carryOnBags": ""
+                }
+              ],
+              "currency": {
+                "baseCurrency": true,
+                "code": null,
+                "description": "",
+                "exchangeRate": 1
+              },
+              "rules": null,
+              "privateFare": null,
+              "lccFare": null,
+              "ndcFare": null,
+              "refundableFare": null,
+              "ndcTimeLimit": 0,
+              "vfrFare": null,
+              "vfrFareWithRelations": null,
+              "vfrFareLaborVisa": null
+            },
+            {
+              "key": "FARE_OPTION_dfd67b94ebb313c176822295d6598ac3",
+              "comboRefs": null,
+              "journeyFareClass": "J",
+              "fareAmountBreakdowns": [
+                {
+                  "type": "ADULT",
+                  "changeType": null,
+                  "dataChange": null,
+                  "charges": [
+                    {
+                      "key": "ADTFARE_OPTION_dfd67b94ebb313c176822295d6598ac3",
+                      "chargeType": {
+                        "code": "FARE",
+                        "type": "Fare",
+                        "category": "",
+                        "description": {
+                          "en": "Fare Charge",
+                          "vi": "Phí vé"
+                        }
+                      },
+                      "charge": {
+                        "base": 7318193,
+                        "tax": 1054365,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 8372558,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": null,
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "",
+                      "extra": null
+                    },
+                    {
+                      "key": "",
+                      "chargeType": {
+                        "code": "BE_SERVICE",
+                        "type": "BE_SERVICE",
+                        "category": "",
+                        "description": {
+                          "en": "System Service Fee",
+                          "vi": "Phí dịch vụ hệ thống"
+                        }
+                      },
+                      "charge": {
+                        "base": 0,
+                        "tax": 0,
+                        "applied": 0,
+                        "surCharge": 0,
+                        "total": 5000,
+                        "discount": 0,
+                        "currency": {
+                          "baseCurrency": true,
+                          "code": "VND",
+                          "description": "",
+                          "exchangeRate": 1
+                        }
+                      },
+                      "description": "Phí dịch vụ hệ thống",
+                      "extra": null
+                    }
+                  ],
+                  "totalFare": null,
+                  "change": false
+                }
+              ],
+              "fareInfos": [
+                {
+                  "fareClass": "J",
+                  "seatRemain": 2,
                   "cabin": {
                     "code": "Business",
                     "description": "J",
@@ -4681,10 +4681,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763190000,
+                "scheduleTime": 1764226800,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T14:00:00"
+                "localTime": "2025-11-27T14:00:00"
               },
               "arrival": {
                 "airport": {
@@ -4696,23 +4696,23 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763197800,
+                "scheduleTime": 1764234600,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T16:10:00"
+                "localTime": "2025-11-27T16:10:00"
               },
               "bookingClassArr": [
                 {
                   "fareClass": "R",
-                  "available": 3
+                  "available": 5
                 },
                 {
                   "fareClass": "U",
-                  "available": 8
+                  "available": 1
                 },
                 {
                   "fareClass": "J",
-                  "available": 9
+                  "available": 2
                 }
               ],
               "bookedInfo": null,
@@ -4732,10 +4732,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763190000,
+            "scheduleTime": 1764226800,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T14:00:00"
+            "localTime": "2025-11-27T14:00:00"
           },
           "arrival": {
             "airport": {
@@ -4747,10 +4747,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763197800,
+            "scheduleTime": 1764234600,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T16:10:00"
+            "localTime": "2025-11-27T16:10:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -4795,11 +4795,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1528771,
-                        "tax": 778936,
+                        "base": 1287689,
+                        "tax": 636876,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2307707,
+                        "total": 1924565,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -4847,7 +4847,7 @@
               "fareInfos": [
                 {
                   "fareClass": "R",
-                  "seatRemain": 9,
+                  "seatRemain": 1,
                   "cabin": {
                     "code": "Economy",
                     "description": "R",
@@ -4899,11 +4899,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3143226,
-                        "tax": 867428,
+                        "base": 2705046,
+                        "tax": 776688,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4010654,
+                        "total": 3481734,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -4951,7 +4951,7 @@
               "fareInfos": [
                 {
                   "fareClass": "U",
-                  "seatRemain": 2,
+                  "seatRemain": 4,
                   "cabin": {
                     "code": "Premium",
                     "description": "U",
@@ -5003,11 +5003,11 @@
                         }
                       },
                       "charge": {
-                        "base": 8681600,
-                        "tax": 1225928,
+                        "base": 7350846,
+                        "tax": 1089856,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 9907528,
+                        "total": 8440702,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -5055,7 +5055,7 @@
               "fareInfos": [
                 {
                   "fareClass": "J",
-                  "seatRemain": 3,
+                  "seatRemain": 2,
                   "cabin": {
                     "code": "Business",
                     "description": "J",
@@ -5114,10 +5114,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763193600,
+                "scheduleTime": 1764230400,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T15:00:00"
+                "localTime": "2025-11-27T15:00:00"
               },
               "arrival": {
                 "airport": {
@@ -5129,23 +5129,23 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763201400,
+                "scheduleTime": 1764238200,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T17:10:00"
+                "localTime": "2025-11-27T17:10:00"
               },
               "bookingClassArr": [
                 {
                   "fareClass": "R",
-                  "available": 9
+                  "available": 1
                 },
                 {
                   "fareClass": "U",
-                  "available": 2
+                  "available": 4
                 },
                 {
                   "fareClass": "J",
-                  "available": 3
+                  "available": 2
                 }
               ],
               "bookedInfo": null,
@@ -5165,10 +5165,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763193600,
+            "scheduleTime": 1764230400,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T15:00:00"
+            "localTime": "2025-11-27T15:00:00"
           },
           "arrival": {
             "airport": {
@@ -5180,10 +5180,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763201400,
+            "scheduleTime": 1764238200,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T17:10:00"
+            "localTime": "2025-11-27T17:10:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -5228,11 +5228,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1580226,
-                        "tax": 745516,
+                        "base": 1502346,
+                        "tax": 723331,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2325742,
+                        "total": 2225677,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -5332,11 +5332,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3439109,
-                        "tax": 906227,
+                        "base": 2680457,
+                        "tax": 753226,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4345336,
+                        "total": 3433683,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -5384,7 +5384,7 @@
               "fareInfos": [
                 {
                   "fareClass": "U",
-                  "seatRemain": 7,
+                  "seatRemain": 9,
                   "cabin": {
                     "code": "Premium",
                     "description": "U",
@@ -5436,11 +5436,11 @@
                         }
                       },
                       "charge": {
-                        "base": 8532568,
-                        "tax": 1255828,
+                        "base": 6617845,
+                        "tax": 1093098,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 9788396,
+                        "total": 7710943,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -5488,7 +5488,7 @@
               "fareInfos": [
                 {
                   "fareClass": "J",
-                  "seatRemain": 9,
+                  "seatRemain": 5,
                   "cabin": {
                     "code": "Business",
                     "description": "J",
@@ -5547,10 +5547,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763195400,
+                "scheduleTime": 1764232200,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T15:30:00"
+                "localTime": "2025-11-27T15:30:00"
               },
               "arrival": {
                 "airport": {
@@ -5562,10 +5562,10 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763203200,
+                "scheduleTime": 1764240000,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T17:40:00"
+                "localTime": "2025-11-27T17:40:00"
               },
               "bookingClassArr": [
                 {
@@ -5574,11 +5574,11 @@
                 },
                 {
                   "fareClass": "U",
-                  "available": 7
+                  "available": 9
                 },
                 {
                   "fareClass": "J",
-                  "available": 9
+                  "available": 5
                 }
               ],
               "bookedInfo": null,
@@ -5598,10 +5598,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763195400,
+            "scheduleTime": 1764232200,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T15:30:00"
+            "localTime": "2025-11-27T15:30:00"
           },
           "arrival": {
             "airport": {
@@ -5613,10 +5613,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763203200,
+            "scheduleTime": 1764240000,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T17:40:00"
+            "localTime": "2025-11-27T17:40:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -5661,11 +5661,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1800948,
-                        "tax": 720801,
+                        "base": 1700252,
+                        "tax": 717606,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2521749,
+                        "total": 2417858,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -5713,7 +5713,7 @@
               "fareInfos": [
                 {
                   "fareClass": "N",
-                  "seatRemain": 8,
+                  "seatRemain": 6,
                   "cabin": {
                     "code": "Economy",
                     "description": "N",
@@ -5765,11 +5765,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3697279,
-                        "tax": 899991,
+                        "base": 3018575,
+                        "tax": 828957,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4597270,
+                        "total": 3847532,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -5817,7 +5817,7 @@
               "fareInfos": [
                 {
                   "fareClass": "U",
-                  "seatRemain": 8,
+                  "seatRemain": 6,
                   "cabin": {
                     "code": "Premium",
                     "description": "U",
@@ -5869,11 +5869,11 @@
                         }
                       },
                       "charge": {
-                        "base": 7624007,
-                        "tax": 1291776,
+                        "base": 6743669,
+                        "tax": 1007475,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 8915783,
+                        "total": 7751144,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -5921,7 +5921,7 @@
               "fareInfos": [
                 {
                   "fareClass": "J",
-                  "seatRemain": 6,
+                  "seatRemain": 1,
                   "cabin": {
                     "code": "Business",
                     "description": "J",
@@ -5980,10 +5980,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763197200,
+                "scheduleTime": 1764234000,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T16:00:00"
+                "localTime": "2025-11-27T16:00:00"
               },
               "arrival": {
                 "airport": {
@@ -5995,23 +5995,23 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763205000,
+                "scheduleTime": 1764241800,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T18:10:00"
+                "localTime": "2025-11-27T18:10:00"
               },
               "bookingClassArr": [
                 {
                   "fareClass": "N",
-                  "available": 8
+                  "available": 6
                 },
                 {
                   "fareClass": "U",
-                  "available": 8
+                  "available": 6
                 },
                 {
                   "fareClass": "J",
-                  "available": 6
+                  "available": 1
                 }
               ],
               "bookedInfo": null,
@@ -6031,10 +6031,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763197200,
+            "scheduleTime": 1764234000,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T16:00:00"
+            "localTime": "2025-11-27T16:00:00"
           },
           "arrival": {
             "airport": {
@@ -6046,10 +6046,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763205000,
+            "scheduleTime": 1764241800,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T18:10:00"
+            "localTime": "2025-11-27T18:10:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -6094,11 +6094,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1791472,
-                        "tax": 795933,
+                        "base": 1567085,
+                        "tax": 658176,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2587405,
+                        "total": 2225261,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -6146,7 +6146,7 @@
               "fareInfos": [
                 {
                   "fareClass": "R",
-                  "seatRemain": 5,
+                  "seatRemain": 2,
                   "cabin": {
                     "code": "Economy",
                     "description": "R",
@@ -6198,11 +6198,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3426278,
-                        "tax": 867267,
+                        "base": 3069926,
+                        "tax": 712192,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4293545,
+                        "total": 3782118,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -6250,7 +6250,7 @@
               "fareInfos": [
                 {
                   "fareClass": "U",
-                  "seatRemain": 7,
+                  "seatRemain": 4,
                   "cabin": {
                     "code": "Premium",
                     "description": "U",
@@ -6302,11 +6302,11 @@
                         }
                       },
                       "charge": {
-                        "base": 6137155,
-                        "tax": 1109966,
+                        "base": 5823791,
+                        "tax": 1020116,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 7247121,
+                        "total": 6843907,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -6354,7 +6354,7 @@
               "fareInfos": [
                 {
                   "fareClass": "J",
-                  "seatRemain": 7,
+                  "seatRemain": 1,
                   "cabin": {
                     "code": "Business",
                     "description": "J",
@@ -6413,10 +6413,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763200800,
+                "scheduleTime": 1764237600,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T17:00:00"
+                "localTime": "2025-11-27T17:00:00"
               },
               "arrival": {
                 "airport": {
@@ -6428,23 +6428,23 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763208600,
+                "scheduleTime": 1764245400,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T19:10:00"
+                "localTime": "2025-11-27T19:10:00"
               },
               "bookingClassArr": [
                 {
                   "fareClass": "R",
-                  "available": 5
+                  "available": 2
                 },
                 {
                   "fareClass": "U",
-                  "available": 7
+                  "available": 4
                 },
                 {
                   "fareClass": "J",
-                  "available": 7
+                  "available": 1
                 }
               ],
               "bookedInfo": null,
@@ -6464,10 +6464,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763200800,
+            "scheduleTime": 1764237600,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T17:00:00"
+            "localTime": "2025-11-27T17:00:00"
           },
           "arrival": {
             "airport": {
@@ -6479,10 +6479,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763208600,
+            "scheduleTime": 1764245400,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T19:10:00"
+            "localTime": "2025-11-27T19:10:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -6527,11 +6527,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1732959,
-                        "tax": 714931,
+                        "base": 1283425,
+                        "tax": 683270,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2447890,
+                        "total": 1966695,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -6579,7 +6579,7 @@
               "fareInfos": [
                 {
                   "fareClass": "R",
-                  "seatRemain": 6,
+                  "seatRemain": 9,
                   "cabin": {
                     "code": "Economy",
                     "description": "R",
@@ -6631,11 +6631,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3276084,
-                        "tax": 944706,
+                        "base": 3267312,
+                        "tax": 724321,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4220790,
+                        "total": 3991633,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -6683,7 +6683,7 @@
               "fareInfos": [
                 {
                   "fareClass": "U",
-                  "seatRemain": 6,
+                  "seatRemain": 7,
                   "cabin": {
                     "code": "Premium",
                     "description": "U",
@@ -6735,11 +6735,11 @@
                         }
                       },
                       "charge": {
-                        "base": 7082298,
-                        "tax": 1191986,
+                        "base": 5795527,
+                        "tax": 1026504,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 8274284,
+                        "total": 6822031,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -6846,10 +6846,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763202600,
+                "scheduleTime": 1764239400,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T17:30:00"
+                "localTime": "2025-11-27T17:30:00"
               },
               "arrival": {
                 "airport": {
@@ -6861,19 +6861,19 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763210400,
+                "scheduleTime": 1764247200,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T19:40:00"
+                "localTime": "2025-11-27T19:40:00"
               },
               "bookingClassArr": [
                 {
                   "fareClass": "R",
-                  "available": 6
+                  "available": 9
                 },
                 {
                   "fareClass": "U",
-                  "available": 6
+                  "available": 7
                 },
                 {
                   "fareClass": "J",
@@ -6897,10 +6897,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763202600,
+            "scheduleTime": 1764239400,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T17:30:00"
+            "localTime": "2025-11-27T17:30:00"
           },
           "arrival": {
             "airport": {
@@ -6912,10 +6912,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763210400,
+            "scheduleTime": 1764247200,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T19:40:00"
+            "localTime": "2025-11-27T19:40:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -6960,11 +6960,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1796317,
-                        "tax": 792945,
+                        "base": 1333084,
+                        "tax": 603410,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2589262,
+                        "total": 1936494,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -7012,7 +7012,7 @@
               "fareInfos": [
                 {
                   "fareClass": "R",
-                  "seatRemain": 5,
+                  "seatRemain": 8,
                   "cabin": {
                     "code": "Economy",
                     "description": "R",
@@ -7064,11 +7064,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3334332,
-                        "tax": 857138,
+                        "base": 2752532,
+                        "tax": 837057,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4191470,
+                        "total": 3589589,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -7116,7 +7116,7 @@
               "fareInfos": [
                 {
                   "fareClass": "U",
-                  "seatRemain": 1,
+                  "seatRemain": 9,
                   "cabin": {
                     "code": "Premium",
                     "description": "U",
@@ -7168,11 +7168,11 @@
                         }
                       },
                       "charge": {
-                        "base": 6109713,
-                        "tax": 1138689,
+                        "base": 6104044,
+                        "tax": 1096169,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 7248402,
+                        "total": 7200213,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -7220,7 +7220,7 @@
               "fareInfos": [
                 {
                   "fareClass": "J",
-                  "seatRemain": 1,
+                  "seatRemain": 9,
                   "cabin": {
                     "code": "Business",
                     "description": "J",
@@ -7279,10 +7279,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763204400,
+                "scheduleTime": 1764241200,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T18:00:00"
+                "localTime": "2025-11-27T18:00:00"
               },
               "arrival": {
                 "airport": {
@@ -7294,23 +7294,23 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763212200,
+                "scheduleTime": 1764249000,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T20:10:00"
+                "localTime": "2025-11-27T20:10:00"
               },
               "bookingClassArr": [
                 {
                   "fareClass": "R",
-                  "available": 5
+                  "available": 8
                 },
                 {
                   "fareClass": "U",
-                  "available": 1
+                  "available": 9
                 },
                 {
                   "fareClass": "J",
-                  "available": 1
+                  "available": 9
                 }
               ],
               "bookedInfo": null,
@@ -7330,10 +7330,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763204400,
+            "scheduleTime": 1764241200,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T18:00:00"
+            "localTime": "2025-11-27T18:00:00"
           },
           "arrival": {
             "airport": {
@@ -7345,10 +7345,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763212200,
+            "scheduleTime": 1764249000,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T20:10:00"
+            "localTime": "2025-11-27T20:10:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -7393,11 +7393,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1627102,
-                        "tax": 702222,
+                        "base": 1554127,
+                        "tax": 658609,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2329324,
+                        "total": 2212736,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -7497,11 +7497,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3681687,
-                        "tax": 838762,
+                        "base": 2782232,
+                        "tax": 829893,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4520449,
+                        "total": 3612125,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -7549,7 +7549,7 @@
               "fareInfos": [
                 {
                   "fareClass": "U",
-                  "seatRemain": 8,
+                  "seatRemain": 7,
                   "cabin": {
                     "code": "Premium",
                     "description": "U",
@@ -7601,11 +7601,11 @@
                         }
                       },
                       "charge": {
-                        "base": 6940565,
-                        "tax": 1130876,
+                        "base": 5639258,
+                        "tax": 911237,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 8071441,
+                        "total": 6550495,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -7653,7 +7653,7 @@
               "fareInfos": [
                 {
                   "fareClass": "J",
-                  "seatRemain": 6,
+                  "seatRemain": 3,
                   "cabin": {
                     "code": "Business",
                     "description": "J",
@@ -7712,10 +7712,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763208000,
+                "scheduleTime": 1764244800,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T19:00:00"
+                "localTime": "2025-11-27T19:00:00"
               },
               "arrival": {
                 "airport": {
@@ -7727,10 +7727,10 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763215800,
+                "scheduleTime": 1764252600,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T21:10:00"
+                "localTime": "2025-11-27T21:10:00"
               },
               "bookingClassArr": [
                 {
@@ -7739,11 +7739,11 @@
                 },
                 {
                   "fareClass": "U",
-                  "available": 8
+                  "available": 7
                 },
                 {
                   "fareClass": "J",
-                  "available": 6
+                  "available": 3
                 }
               ],
               "bookedInfo": null,
@@ -7763,10 +7763,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763208000,
+            "scheduleTime": 1764244800,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T19:00:00"
+            "localTime": "2025-11-27T19:00:00"
           },
           "arrival": {
             "airport": {
@@ -7778,10 +7778,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763215800,
+            "scheduleTime": 1764252600,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T21:10:00"
+            "localTime": "2025-11-27T21:10:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -7826,11 +7826,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1764287,
-                        "tax": 719792,
+                        "base": 1343142,
+                        "tax": 678540,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2484079,
+                        "total": 2021682,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -7878,7 +7878,7 @@
               "fareInfos": [
                 {
                   "fareClass": "R",
-                  "seatRemain": 8,
+                  "seatRemain": 2,
                   "cabin": {
                     "code": "Economy",
                     "description": "R",
@@ -7930,11 +7930,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3396367,
-                        "tax": 826870,
+                        "base": 3061044,
+                        "tax": 742870,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4223237,
+                        "total": 3803914,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -7982,7 +7982,7 @@
               "fareInfos": [
                 {
                   "fareClass": "U",
-                  "seatRemain": 4,
+                  "seatRemain": 7,
                   "cabin": {
                     "code": "Premium",
                     "description": "U",
@@ -8034,11 +8034,11 @@
                         }
                       },
                       "charge": {
-                        "base": 6611409,
-                        "tax": 1160605,
+                        "base": 5753706,
+                        "tax": 1009983,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 7772014,
+                        "total": 6763689,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -8145,10 +8145,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763211600,
+                "scheduleTime": 1764248400,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T20:00:00"
+                "localTime": "2025-11-27T20:00:00"
               },
               "arrival": {
                 "airport": {
@@ -8160,19 +8160,19 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763219400,
+                "scheduleTime": 1764256200,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T22:10:00"
+                "localTime": "2025-11-27T22:10:00"
               },
               "bookingClassArr": [
                 {
                   "fareClass": "R",
-                  "available": 8
+                  "available": 2
                 },
                 {
                   "fareClass": "U",
-                  "available": 4
+                  "available": 7
                 },
                 {
                   "fareClass": "J",
@@ -8196,10 +8196,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763211600,
+            "scheduleTime": 1764248400,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T20:00:00"
+            "localTime": "2025-11-27T20:00:00"
           },
           "arrival": {
             "airport": {
@@ -8211,10 +8211,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763219400,
+            "scheduleTime": 1764256200,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T22:10:00"
+            "localTime": "2025-11-27T22:10:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -8259,11 +8259,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1466622,
-                        "tax": 783425,
+                        "base": 1222280,
+                        "tax": 598488,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2250047,
+                        "total": 1820768,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -8311,7 +8311,7 @@
               "fareInfos": [
                 {
                   "fareClass": "T",
-                  "seatRemain": 5,
+                  "seatRemain": 3,
                   "cabin": {
                     "code": "Economy",
                     "description": "T",
@@ -8363,11 +8363,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3711285,
-                        "tax": 912643,
+                        "base": 2883311,
+                        "tax": 704404,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4623928,
+                        "total": 3587715,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -8415,7 +8415,7 @@
               "fareInfos": [
                 {
                   "fareClass": "I",
-                  "seatRemain": 8,
+                  "seatRemain": 6,
                   "cabin": {
                     "code": "Business",
                     "description": "I",
@@ -8467,11 +8467,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3159060,
-                        "tax": 859944,
+                        "base": 2827844,
+                        "tax": 714208,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4019004,
+                        "total": 3542052,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -8519,7 +8519,7 @@
               "fareInfos": [
                 {
                   "fareClass": "U",
-                  "seatRemain": 1,
+                  "seatRemain": 7,
                   "cabin": {
                     "code": "Premium",
                     "description": "U",
@@ -8578,10 +8578,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763213400,
+                "scheduleTime": 1764250200,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T20:30:00"
+                "localTime": "2025-11-27T20:30:00"
               },
               "arrival": {
                 "airport": {
@@ -8593,23 +8593,23 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763221200,
+                "scheduleTime": 1764258000,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T22:40:00"
+                "localTime": "2025-11-27T22:40:00"
               },
               "bookingClassArr": [
                 {
                   "fareClass": "T",
-                  "available": 5
+                  "available": 3
                 },
                 {
                   "fareClass": "I",
-                  "available": 8
+                  "available": 6
                 },
                 {
                   "fareClass": "U",
-                  "available": 1
+                  "available": 7
                 }
               ],
               "bookedInfo": null,
@@ -8629,10 +8629,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763213400,
+            "scheduleTime": 1764250200,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T20:30:00"
+            "localTime": "2025-11-27T20:30:00"
           },
           "arrival": {
             "airport": {
@@ -8644,10 +8644,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763221200,
+            "scheduleTime": 1764258000,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T22:40:00"
+            "localTime": "2025-11-27T22:40:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -8692,11 +8692,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1314894,
-                        "tax": 782863,
+                        "base": 1163801,
+                        "tax": 690774,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 2097757,
+                        "total": 1854575,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -8744,7 +8744,7 @@
               "fareInfos": [
                 {
                   "fareClass": "T",
-                  "seatRemain": 8,
+                  "seatRemain": 3,
                   "cabin": {
                     "code": "Economy",
                     "description": "T",
@@ -8796,11 +8796,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3455731,
-                        "tax": 861444,
+                        "base": 3079112,
+                        "tax": 825862,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4317175,
+                        "total": 3904974,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -8900,11 +8900,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3543410,
-                        "tax": 962519,
+                        "base": 2774047,
+                        "tax": 777988,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4505929,
+                        "total": 3552035,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -8952,7 +8952,7 @@
               "fareInfos": [
                 {
                   "fareClass": "U",
-                  "seatRemain": 2,
+                  "seatRemain": 3,
                   "cabin": {
                     "code": "Premium",
                     "description": "U",
@@ -9011,10 +9011,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763215200,
+                "scheduleTime": 1764252000,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T21:00:00"
+                "localTime": "2025-11-27T21:00:00"
               },
               "arrival": {
                 "airport": {
@@ -9026,15 +9026,15 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763223000,
+                "scheduleTime": 1764259800,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T23:10:00"
+                "localTime": "2025-11-27T23:10:00"
               },
               "bookingClassArr": [
                 {
                   "fareClass": "T",
-                  "available": 8
+                  "available": 3
                 },
                 {
                   "fareClass": "I",
@@ -9042,7 +9042,7 @@
                 },
                 {
                   "fareClass": "U",
-                  "available": 2
+                  "available": 3
                 }
               ],
               "bookedInfo": null,
@@ -9062,10 +9062,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763215200,
+            "scheduleTime": 1764252000,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T21:00:00"
+            "localTime": "2025-11-27T21:00:00"
           },
           "arrival": {
             "airport": {
@@ -9077,10 +9077,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763223000,
+            "scheduleTime": 1764259800,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T23:10:00"
+            "localTime": "2025-11-27T23:10:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -9125,11 +9125,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1126174,
-                        "tax": 668234,
+                        "base": 956540,
+                        "tax": 668834,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 1794408,
+                        "total": 1625374,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -9229,11 +9229,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3716395,
-                        "tax": 949370,
+                        "base": 2861056,
+                        "tax": 757634,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4665765,
+                        "total": 3618690,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -9281,7 +9281,7 @@
               "fareInfos": [
                 {
                   "fareClass": "I",
-                  "seatRemain": 2,
+                  "seatRemain": 8,
                   "cabin": {
                     "code": "Business",
                     "description": "I",
@@ -9333,11 +9333,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3286452,
-                        "tax": 933787,
+                        "base": 3100430,
+                        "tax": 793247,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4220239,
+                        "total": 3893677,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -9385,7 +9385,7 @@
               "fareInfos": [
                 {
                   "fareClass": "U",
-                  "seatRemain": 6,
+                  "seatRemain": 4,
                   "cabin": {
                     "code": "Premium",
                     "description": "U",
@@ -9444,10 +9444,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763218800,
+                "scheduleTime": 1764255600,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T22:00:00"
+                "localTime": "2025-11-27T22:00:00"
               },
               "arrival": {
                 "airport": {
@@ -9459,10 +9459,10 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763226600,
+                "scheduleTime": 1764263400,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-16T00:10:00"
+                "localTime": "2025-11-28T00:10:00"
               },
               "bookingClassArr": [
                 {
@@ -9471,11 +9471,11 @@
                 },
                 {
                   "fareClass": "I",
-                  "available": 2
+                  "available": 8
                 },
                 {
                   "fareClass": "U",
-                  "available": 6
+                  "available": 4
                 }
               ],
               "bookedInfo": null,
@@ -9495,10 +9495,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763218800,
+            "scheduleTime": 1764255600,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T22:00:00"
+            "localTime": "2025-11-27T22:00:00"
           },
           "arrival": {
             "airport": {
@@ -9510,10 +9510,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763226600,
+            "scheduleTime": 1764263400,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-16T00:10:00"
+            "localTime": "2025-11-28T00:10:00"
           },
           "dataChange": "",
           "typeChange": "",
@@ -9558,11 +9558,11 @@
                         }
                       },
                       "charge": {
-                        "base": 1083322,
-                        "tax": 729624,
+                        "base": 857957,
+                        "tax": 571549,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 1812946,
+                        "total": 1429506,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -9662,11 +9662,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3206080,
-                        "tax": 913762,
+                        "base": 2790879,
+                        "tax": 788316,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4119842,
+                        "total": 3579195,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -9714,7 +9714,7 @@
               "fareInfos": [
                 {
                   "fareClass": "I",
-                  "seatRemain": 1,
+                  "seatRemain": 3,
                   "cabin": {
                     "code": "Business",
                     "description": "I",
@@ -9766,11 +9766,11 @@
                         }
                       },
                       "charge": {
-                        "base": 3827484,
-                        "tax": 956790,
+                        "base": 3442829,
+                        "tax": 896750,
                         "applied": 0,
                         "surCharge": 0,
-                        "total": 4784274,
+                        "total": 4339579,
                         "discount": 0,
                         "currency": {
                           "baseCurrency": true,
@@ -9818,7 +9818,7 @@
               "fareInfos": [
                 {
                   "fareClass": "Z",
-                  "seatRemain": 2,
+                  "seatRemain": 9,
                   "cabin": {
                     "code": "Premium",
                     "description": "Z",
@@ -9877,10 +9877,10 @@
                   },
                   "terminal": "1"
                 },
-                "scheduleTime": 1763222400,
+                "scheduleTime": 1764259200,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-15T23:00:00"
+                "localTime": "2025-11-27T23:00:00"
               },
               "arrival": {
                 "airport": {
@@ -9892,10 +9892,10 @@
                   },
                   "terminal": "3"
                 },
-                "scheduleTime": 1763230200,
+                "scheduleTime": 1764267000,
                 "dataChange": "",
                 "typeChange": "",
-                "localTime": "2025-11-16T01:10:00"
+                "localTime": "2025-11-28T01:10:00"
               },
               "bookingClassArr": [
                 {
@@ -9904,11 +9904,11 @@
                 },
                 {
                   "fareClass": "I",
-                  "available": 1
+                  "available": 3
                 },
                 {
                   "fareClass": "Z",
-                  "available": 2
+                  "available": 9
                 }
               ],
               "bookedInfo": null,
@@ -9928,10 +9928,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763222400,
+            "scheduleTime": 1764259200,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-15T23:00:00"
+            "localTime": "2025-11-27T23:00:00"
           },
           "arrival": {
             "airport": {
@@ -9943,10 +9943,10 @@
               },
               "terminal": ""
             },
-            "scheduleTime": 1763230200,
+            "scheduleTime": 1764267000,
             "dataChange": "",
             "typeChange": "",
-            "localTime": "2025-11-16T01:10:00"
+            "localTime": "2025-11-28T01:10:00"
           },
           "dataChange": "",
           "typeChange": "",

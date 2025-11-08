@@ -170,131 +170,42 @@ import re
 import random
 from datetime import datetime, timedelta
 
-def extract_dates_from_text(text: str) -> List[datetime]:
-    """
-    Extract multiple dates from query with enhanced support for various formats and expressions.
-    Returns a list of datetime objects.
-    """
+def extract_date_from_text(text: str):
+    """Try to extract a date from the query (e.g. 'Nov 15', '2025-11-20', 'tomorrow', 'next week')."""
     text = text.lower()
-    dates = []
     today = datetime.now()
+    # Relative references
+    if "tomorrow" in text:
+        return today + timedelta(days=1)
+    if "next week" in text:
+        return today + timedelta(days=7)
 
-    # Handle relative date references in both English and Vietnamese
-    relative_dates = {
-        "today": 0, "hôm nay": 0, "homnay": 0,
-        "tomorrow": 1, "ngày mai": 1, "ngaymai": 1,
-        "next week": 7, "tuần sau": 7, "tuansau": 7,
-        "next month": 30, "tháng sau": 30, "thangsau": 30
-    }
-
-    # Check for relative dates
-    for phrase, days in relative_dates.items():
-        if phrase in text:
-            dates.append(today + timedelta(days=days))
-
-    # Handle date ranges
-    range_patterns = {
-        "en": [
-            r"between (\d{1,2}(?:st|nd|rd|th)?\s+(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+\d{2,4})\s+(?:and|to)\s+(\d{1,2}(?:st|nd|rd|th)?\s+(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+\d{2,4})",
-            r"from (\d{1,2}[/-]\d{1,2}[/-]\d{2,4}) to (\d{1,2}[/-]\d{1,2}[/-]\d{2,4})"
-        ],
-        "vi": [
-            r"từ (\d{1,2}[/-]\d{1,2}[/-]\d{2,4}) đến (\d{1,2}[/-]\d{1,2}[/-]\d{2,4})",
-            r"giữa (\d{1,2}[/-]\d{1,2}[/-]\d{2,4}) và (\d{1,2}[/-]\d{1,2}[/-]\d{2,4})"
-        ]
-    }
-
-    for patterns in range_patterns.values():
-        for pattern in patterns:
-            matches = re.finditer(pattern, text)
-            for match in matches:
-                try:
-                    start_date = parse_date_string(match.group(1))
-                    end_date = parse_date_string(match.group(2))
-                    if start_date and end_date:
-                        dates.extend([start_date, end_date])
-                except:
-                    continue
-
-    # Handle flexible dates
-    flexible_patterns = {
-        "en": [
-            r"(?:around|about|approximately) (\d{1,2}[/-]\d{1,2}[/-]\d{2,4})",
-            r"(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}) \(?±\d+ days?\)?"
-        ],
-        "vi": [
-            r"(?:khoảng|gần|xung quanh) (\d{1,2}[/-]\d{1,2}[/-]\d{2,4})",
-            r"(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}) \(?±\d+ ngày\)?"
-        ]
-    }
-
-    for patterns in flexible_patterns.values():
-        for pattern in patterns:
-            matches = re.finditer(pattern, text)
-            for match in matches:
-                try:
-                    base_date = parse_date_string(match.group(1))
-                    if base_date:
-                        dates.append(base_date)
-                except:
-                    continue
-
-    # Handle specific date formats
+    # Match formats like "Nov 15", "15 Nov", "2025-11-20"
     date_patterns = [
-        # Standard formats
         r"(\d{4})-(\d{1,2})-(\d{1,2})",
         r"(\d{1,2})[/-](\d{1,2})[/-](\d{2,4})",
-        # Month name formats (English)
-        r"(\d{1,2})(?:st|nd|rd|th)?\s+(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+(\d{2,4})",
-        # Vietnamese date formats
-        r"ngày\s+(\d{1,2})\s+tháng\s+(\d{1,2})\s+(?:năm\s+)?(\d{2,4})?",
-        # Abbreviated Vietnamese
-        r"(\d{1,2})\/(\d{1,2})(?:\/(\d{2,4}))?"
+        r"([A-Za-z]+)\s+(\d{1,2})",
+        r"(\d{1,2})\s+([A-Za-z]+)"
     ]
-
-    for pattern in date_patterns:
-        matches = re.finditer(pattern, text)
-        for match in matches:
+    for pat in date_patterns:
+        m = re.search(pat, text)
+        if m:
             try:
-                date_parts = match.groups()
-                if len(date_parts) == 3:
-                    year = int(date_parts[2]) if date_parts[2] else today.year
-                    if year < 100:
-                        year += 2000
-                    month = int(date_parts[1])
-                    day = int(date_parts[0])
-                    dates.append(datetime(year, month, day))
-            except:
-                continue
-
-    # Remove duplicates while preserving order
-    seen = set()
-    unique_dates = []
-    for date in dates:
-        if date not in seen:
-            seen.add(date)
-            unique_dates.append(date)
-
-    return unique_dates
-
-def parse_date_string(date_str: str) -> Optional[datetime]:
-    """Helper function to parse various date string formats."""
-    try:
-        # Try various date formats
-        formats = [
-            "%Y-%m-%d", "%d/%m/%Y", "%d-%m-%Y",
-            "%d/%m/%y", "%d-%m-%y",
-            "%b %d %Y", "%d %b %Y",
-            "%B %d %Y", "%d %B %Y"
-        ]
-        for fmt in formats:
-            try:
-                return datetime.strptime(date_str, fmt)
-            except ValueError:
-                continue
-        return None
-    except:
-        return None
+                s = " ".join(m.groups())
+                return datetime.strptime(s, "%Y %m %d")
+            except Exception:
+                try:
+                    return datetime.strptime(s, "%d %m %Y")
+                except Exception:
+                    # Try month name formats
+                    try:
+                        return datetime.strptime(s, "%b %d")
+                    except Exception:
+                        try:
+                            return datetime.strptime(s, "%d %b")
+                        except Exception:
+                            continue
+    return None
 
 
 def query_fake_flights(query: str, limit: int = 5):
@@ -532,256 +443,12 @@ async def chat(request: Request):
     model_messages = [{"role": "system", "content": system_prompt}] + session[-10:]
 
     # Primary: try LangChain RetrievalQA (if available)
-        # --- Handle flight-related queries using the enhanced flight API ---
+        # --- New: handle flight-related queries locally ---
     if any(kw in message.lower() for kw in ["flight", "ticket", "schedule", "route", "chuyến bay", "vé", "lịch trình"]):
-        # Determine language based on message content
-        language = "vi" if any(word in message.lower() for word in ["chuyến", "vé", "lịch"]) else "en"
-        
-        # Extract route information
-        route_info = {}
-        city_codes = {
-            # Vietnamese cities with variations
-            "hanoi": "HAN", "ha noi": "HAN", "hà nội": "HAN",
-            "ho chi minh": "SGN", "saigon": "SGN", "sài gòn": "SGN", "tphcm": "SGN",
-            "da nang": "DAD", "đà nẵng": "DAD", "danang": "DAD",
-            "nha trang": "CXR",
-            "phu quoc": "PQC", "phú quốc": "PQC",
-            "hue": "HUI", "huế": "HUI",
-            "can tho": "VCA", "cần thơ": "VCA",
-            # International cities
-            "tokyo": "NRT",
-            "seoul": "ICN",
-            "bangkok": "BKK",
-            "singapore": "SIN",
-            "kuala lumpur": "KUL",
-            "melbourne": "MEL",
-            "sydney": "SYD",
-            "paris": "CDG",
-            "london": "LHR",
-            "frankfurt": "FRA"
-        }
-        
-        message_lower = message.lower()
-        # Try to find origin and destination
-        for city, code in city_codes.items():
-            if city in message_lower:
-                if 'origin' not in route_info:
-                    route_info['origin'] = code
-                elif 'destination' not in route_info and code != route_info.get('origin'):
-                    route_info['destination'] = code
-                    break
-        
-        # Try to extract dates with the new enhanced function
-        dates = extract_dates_from_text(message)
-        if dates:
-            route_info['depart_date'] = dates[0].strftime("%Y-%m-%d")
-            if len(dates) > 1:  # If multiple dates found
-                route_info['return_date'] = dates[1].strftime("%Y-%m-%d")
-                # If more dates, assume multi-city
-                if len(dates) > 2:
-                    route_info['multi_city_dates'] = [d.strftime("%Y-%m-%d") for d in dates[2:]]
-                    
-        # Extract price range preferences
-        price_ranges = {
-            "budget": {"min": 0, "max": 2000000},  # Up to 2M VND
-            "moderate": {"min": 2000000, "max": 5000000},  # 2M-5M VND
-            "premium": {"min": 5000000, "max": float('inf')}  # Above 5M VND
-        }
-        
-        price_keywords = {
-            "en": {
-                "budget": ["cheap", "budget", "economical", "inexpensive"],
-                "moderate": ["moderate", "medium", "standard"],
-                "premium": ["premium", "luxury", "expensive", "business"]
-            },
-            "vi": {
-                "budget": ["rẻ", "tiết kiệm", "giá rẻ", "phổ thông"],
-                "moderate": ["vừa phải", "trung bình", "tiêu chuẩn"],
-                "premium": ["cao cấp", "sang trọng", "đắt", "thương gia"]
-            }
-        }
-        
-        # Detect price range preference
-        for range_type, keywords in price_keywords[language].items():
-            if any(kw in message_lower for kw in keywords):
-                route_info['price_range'] = price_ranges[range_type]
-                break
-                
-        # Extract flight preferences
-        preferences = {
-            "direct_only": any(kw in message_lower for kw in 
-                             ["direct", "non-stop", "trực tiếp", "không dừng"]),
-            "preferred_airlines": [],
-            "meal_preference": None,
-            "seat_preference": None
-        }
-        
-        # Detect meal preferences
-        meal_keywords = {
-            "en": {
-                "VEGETARIAN": ["vegetarian", "vegan"],
-                "HALAL": ["halal"],
-                "KOSHER": ["kosher"],
-                "DIABETIC": ["diabetic", "diabetes"]
-            },
-            "vi": {
-                "VEGETARIAN": ["chay", "ăn chay"],
-                "HALAL": ["halal"],
-                "KOSHER": ["kosher"],
-                "DIABETIC": ["tiểu đường"]
-            }
-        }
-        
-        for meal_type, keywords in meal_keywords[language].items():
-            if any(kw in message_lower for kw in keywords):
-                preferences['meal_preference'] = meal_type
-                break
-                
-        # Detect seat preferences
-        seat_keywords = {
-            "en": {
-                "WINDOW": ["window"],
-                "AISLE": ["aisle"],
-                "EXTRA_LEGROOM": ["extra leg", "more space"]
-            },
-            "vi": {
-                "WINDOW": ["cửa sổ"],
-                "AISLE": ["lối đi"],
-                "EXTRA_LEGROOM": ["thêm chỗ", "rộng rãi"]
-            }
-        }
-        
-        for seat_type, keywords in seat_keywords[language].items():
-            if any(kw in message_lower for kw in keywords):
-                preferences['seat_preference'] = seat_type
-                break
-        
-        # Extract passenger counts
-        passenger_info = {
-            'adult_count': 1,  # Default to 1 adult
-            'child_count': 0,
-            'infant_count': 0
-        }
-        
-        # Look for number patterns followed by passenger type indicators
-        number_words = {
-            'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5,
-            'một': 1, 'hai': 2, 'ba': 3, 'bốn': 4, 'năm': 5
-        }
-        
-        # Extract numeric values
-        import re
-        numbers = re.findall(r'\d+', message)
-        words = message_lower.split()
-        
-        for i, word in enumerate(words):
-            if word in number_words or word.isdigit():
-                num = int(word) if word.isdigit() else number_words[word]
-                # Check next word for passenger type
-                if i + 1 < len(words):
-                    next_word = words[i + 1]
-                    if any(typ in next_word for typ in ['adult', 'người lớn', 'nguoi lon']):
-                        passenger_info['adult_count'] = num
-                    elif any(typ in next_word for typ in ['child', 'trẻ em', 'tre em']):
-                        passenger_info['child_count'] = num
-                    elif any(typ in next_word for typ in ['infant', 'em bé', 'em be']):
-                        passenger_info['infant_count'] = num
-        
-        # Detect cabin class preference
-        cabin_class = "ECONOMY"  # Default
-        if any(cls in message_lower for cls in ["business", "thương gia", "thuong gia"]):
-            cabin_class = "BUSINESS"
-        elif any(cls in message_lower for cls in ["premium", "đặc biệt", "dac biet"]):
-            cabin_class = "PREMIUM_ECONOMY"
-        
-        # If we have sufficient information, try the API
-        if route_info.get('origin') and route_info.get('destination') and route_info.get('depart_date'):
-            try:
-                from flight_api import search_flights
-                # Determine sorting criteria based on user preferences
-                sort_criteria = "price"  # Default
-                if any(kw in message_lower for kw in ["earliest", "sớm nhất"]):
-                    sort_criteria = "departure"
-                elif any(kw in message_lower for kw in ["shortest", "fastest", "nhanh nhất", "ngắn nhất"]):
-                    sort_criteria = "duration"
-                elif any(kw in message_lower for kw in ["stops", "quá cảnh"]):
-                    sort_criteria = "stops"
-                
-                # Build search parameters
-                search_params = {
-                    "start_point": route_info['origin'],
-                    "end_point": route_info['destination'],
-                    "depart_date": route_info['depart_date'],
-                    "return_date": route_info.get('return_date'),
-                    "adult_count": passenger_info['adult_count'],
-                    "child_count": passenger_info['child_count'],
-                    "infant_count": passenger_info['infant_count'],
-                    "cabin_class": cabin_class,
-                    "language": language,
-                    "sort_by": sort_criteria
-                }
-                
-                # Add multi-city information if available
-                if route_info.get('multi_city_dates'):
-                    search_params['multi_city_dates'] = route_info['multi_city_dates']
-                
-                # Add price range if specified
-                if 'price_range' in route_info:
-                    search_params['min_price'] = route_info['price_range']['min']
-                    search_params['max_price'] = route_info['price_range']['max']
-                
-                # Add preferences if specified
-                if preferences.get('direct_only'):
-                    search_params['direct_only'] = True
-                if preferences.get('meal_preference'):
-                    search_params['meal_preference'] = preferences['meal_preference']
-                if preferences.get('seat_preference'):
-                    search_params['seat_preference'] = preferences['seat_preference']
-                
-                flight_results = search_flights(**search_params
-                )
-                
-                if flight_results and 'formatted_response' in flight_results:
-                    reply = flight_results['formatted_response']
-                else:
-                    # Fallback messages based on language
-                    reply = ("No flights found for your criteria. Please try different dates or routes." 
-                            if language == "en" else 
-                            "Không tìm thấy chuyến bay phù hợp. Vui lòng thử các ngày hoặc tuyến đường khác.")
-                
-                session.append({"role": "assistant", "content": reply})
-                _save_sessions_to_disk()
-                if fetch_history:
-                    return {"reply": reply, "history": session}
-                return {"reply": reply}
-                
-            except Exception as e:
-                logger.warning(f"Flight API failed: {e}")
-                # Fallback message based on language
-                reply = ("Sorry, I couldn't search for flights at the moment. Please try again later." 
-                        if language == "en" else 
-                        "Xin lỗi, hiện tại không thể tìm kiếm chuyến bay. Vui lòng thử lại sau.")
-                session.append({"role": "assistant", "content": reply})
-                _save_sessions_to_disk()
-                if fetch_history:
-                    return {"reply": reply, "history": session}
-                return {"reply": reply}
-        
-        else:
-            # Ask for missing information based on language
-            missing_info = []
-            if 'origin' not in route_info:
-                missing_info.append("departure city" if language == "en" else "thành phố khởi hành")
-            if 'destination' not in route_info:
-                missing_info.append("destination city" if language == "en" else "thành phố đến")
-            if 'depart_date' not in route_info:
-                missing_info.append("travel date" if language == "en" else "ngày đi")
-            
-            if language == "en":
-                reply = f"Please provide the following information to search for flights: {', '.join(missing_info)}"
-            else:
-                reply = f"Vui lòng cung cấp thông tin sau để tìm chuyến bay: {', '.join(missing_info)}"
-            
+        fake_results = query_fake_flights(message)
+        if fake_results:
+            reply = format_flight_results(fake_results)
+            # Save assistant reply and persist, then return directly
             session.append({"role": "assistant", "content": reply})
             _save_sessions_to_disk()
             if fetch_history:
