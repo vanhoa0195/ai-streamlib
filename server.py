@@ -26,7 +26,8 @@ from openai import AzureOpenAI, APIConnectionError, APIError, APITimeoutError, R
 
 # Optional TTS dependencies
 try:
-    from gtts import gTTS
+    from transformers import VitsModel, AutoTokenizer
+    import torch
     TTS_DEPENDENCIES_AVAILABLE = True
 except Exception:
     TTS_DEPENDENCIES_AVAILABLE = False
@@ -108,12 +109,20 @@ except Exception as e:
 
 
 
-# gTTS configuration (free, no API key needed)
-TTS_AVAILABLE = TTS_DEPENDENCIES_AVAILABLE
-if TTS_AVAILABLE:
-    logger.info("gTTS (Google Text-to-Speech) is available - Free TTS enabled!")
+# TTS model load
+SAMPLE_RATE = 22050
+TTS_AVAILABLE = False
+if TTS_DEPENDENCIES_AVAILABLE:
+    try:
+        tts_model = VitsModel.from_pretrained("facebook/mms-tts-vie")
+        tts_tokenizer = AutoTokenizer.from_pretrained("facebook/mms-tts-vie")
+        TTS_AVAILABLE = True
+        logger.info("TTS model loaded successfully")
+    except Exception as e:
+        logger.error("Failed to load TTS model: %s", e)
+        TTS_AVAILABLE = False
 else:
-    logger.warning("gTTS not available; /tts will be disabled")
+    logger.warning("TTS dependencies not available; /tts will be disabled")
 
 app = FastAPI(title="Vietnam Airlines Chatbot API (LangChain + Hybrid)")
 
@@ -339,26 +348,43 @@ async def delete_history(userId: str, chatId: str = "default"):
 # TTS helpers & endpoint
 def _synthesize_wav_bytes(text: str) -> bytes:
     if not TTS_AVAILABLE:
-        raise RuntimeError("gTTS is not available on the server")
+        raise RuntimeError("TTS model is not available on the server")
 
-    # Detect language: Vietnamese if contains Vietnamese characters, else English
-    # Common Vietnamese characters: đ, ă, â, ê, ô, ơ, ư and their uppercase/accented versions
-    is_vietnamese = any(char in text.lower() for char in ['đ', 'ă', 'â', 'ê', 'ô', 'ơ', 'ư', 'ạ', 'ả', 'ã', 'á', 'à'])
-    lang = 'vi' if is_vietnamese else 'en'
+    inputs = tts_tokenizer(text, return_tensors="pt")
+    with torch.no_grad():
+        output = tts_model(**inputs).waveform
 
+    if isinstance(output, torch.Tensor):
+        arr = output.detach().cpu().numpy()
+    else:
+        arr = np.asarray(output)
+
+    if arr.dtype.kind == 'f':
+        maxv = float(np.max(np.abs(arr))) if arr.size > 0 else 1.0
+        if maxv > 0:
+            arr = arr / maxv
+
+    if arr.ndim > 1:
+        arr = arr.reshape(-1)
+
+    buf = io.BytesIO()
     try:
-        # Create gTTS object
-        tts = gTTS(text=text, lang=lang, slow=False)
-
-        # Save to BytesIO buffer
-        audio_buffer = io.BytesIO()
-        tts.write_to_fp(audio_buffer)
-        audio_buffer.seek(0)
-
-        return audio_buffer.getvalue()
-    except Exception as e:
-        logger.error(f"gTTS synthesis failed: {e}")
-        raise RuntimeError(f"Text-to-speech synthesis failed: {e}")
+        import soundfile as sf
+        sf.write(buf, arr, SAMPLE_RATE, format='WAV', subtype='PCM_16')
+        buf.seek(0)
+        return buf.getvalue()
+    except Exception:
+        try:
+            from scipy.io.wavfile import write as wav_write
+            if arr.dtype.kind == 'f':
+                scaled = (arr * 32767).astype(np.int16)
+            else:
+                scaled = arr.astype(np.int16)
+            wav_write(buf, SAMPLE_RATE, scaled)
+            buf.seek(0)
+            return buf.getvalue()
+        except Exception as e:
+            raise RuntimeError(f"No audio writer available on server: {e}")
 
 @app.post("/tts")
 async def tts_endpoint(request: Request):
@@ -375,12 +401,12 @@ async def tts_endpoint(request: Request):
         raise HTTPException(status_code=503, detail="TTS not available on server")
 
     try:
-        audio_bytes = await asyncio.to_thread(_synthesize_wav_bytes, text)
+        wav_bytes = await asyncio.to_thread(_synthesize_wav_bytes, text)
     except Exception as e:
         logger.exception("TTS synthesis failed")
         raise HTTPException(status_code=500, detail=str(e))
 
-    return Response(content=audio_bytes, media_type="audio/mpeg")
+    return Response(content=wav_bytes, media_type="audio/wav")
 
 @app.get("/debug_openai")
 async def debug_openai():
